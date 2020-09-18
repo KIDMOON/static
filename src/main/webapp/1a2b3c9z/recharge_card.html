@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="favicon.ico" />
+<title>充值卡管理</title>
+<link rel="stylesheet" type="text/css" href="media/css/default.css">
+</head>
+<body>
+	<div id="top_nav"></div>
+	<div class="container-fluid all">
+		<div id="left_menu"></div>
+		<div class="maincontent row">
+			<ul class="breadcrumb">
+				<li class="active">充值卡管理</li>
+			</ul>
+			<div class="container-fluid">
+				<!-- 搜索 -->
+				<div class="row" style="margin-bottom: 10px;">
+					<div class="col-md-12" id="div_search">
+						<div class="form-inline mb10">
+                           	<div class="form-group sel-input-item-left">
+                           		<select class="form-control" name="select_use_flag" id="select_use_flag" style="width: 160px; float: left;">
+                           			<option value="">全部</option>
+				   					<option value="0">未使用</option>
+				   					<option value="1">已使用</option>
+				   				</select>
+                           	</div> 
+                           	<div class="form-group" style="margin-left :10px">                       
+                               	<button type="button" class="btn btn-primary" id="btn-search">搜索</button>
+                           	</div>
+                       </div>  
+	                </div> 
+				</div>
+				<div class="row table-search">
+					<div class="col-md-12">
+						<div class="form-inline" style="text-align: right;">
+							<button type="button" class="btn btn-success btn-resetSize" id="add_btn">生成</button>
+							<button type="button" class="btn btn-primary" id="copy_btn">复制</button>
+							<button type="button" class="btn btn-danger" id="btn_multiDelete">批量删除</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<table class="table table-hover table-bordered">
+							<thead>
+								<tr>
+									<th class="text-center" scope="col" style="width: 80px;">
+										<input id="selectAll" type="checkbox" value=""> <span style="padding-left: 5px;">全选</span>
+									</th>
+									<th>充值卡金额$</th>
+									<th>充值卡卡号</th>
+									<th>是否已使用</th>
+									<th>使用者</th>
+									<th style='width: 250px;'>创建时间</th>
+									<th class="operator-2-item">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+							
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<input type="hidden" id="hid_pageIndex" value="0" />
+			<input type="hidden" id="hid_editId" />
+		</div>
+	</div>
+
+	<!-- 添加模态框 -->
+	<div id="add_modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content form-horizontal">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title">批量生成</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label class="col-xs-3 control-label"><em class="emcolor">*</em> <span>金额$</span></label>
+						<div class="col-sm-5">
+							<input id="save_RechargeCardAmount" class="form-control" type="text">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-3 control-label"> <em class="emcolor">*</em> <span>数量</span></label>
+						<div class="col-sm-5">
+							<input id="save_Count" class="form-control" type="text">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button id="modal_add_btn" class="btn btn-success" type="button">生成</button>
+					<button  class="btn btn-default" type="button"
+						data-dismiss="modal" id="close_save_btn">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a href="#top" id="goTop"><i class="fa fa-angle-up fa-3x"></i></a>
+
+	<script type="text/javascript" src="media/js/default.js"></script>
+    <script type="text/javascript" src="js/recharge_card.js"></script>
+	<script type='text/javascript' src='media/js/jquery/clipboard/clipboard.min.js'></script>
+</body>
+</html>

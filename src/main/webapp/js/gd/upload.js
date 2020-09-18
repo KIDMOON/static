@@ -1,0 +1,1 @@
+document.write("<script type='text/javascript'>document.domain=serverAddress.domain;</script>");

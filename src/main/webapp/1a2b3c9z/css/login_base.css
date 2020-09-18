@@ -1,0 +1,25 @@
+body {
+	background-color: #1E4765;
+}
+
+.STYLE4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #2A658F;
+	font-size: 12px;
+}
+
+.STYLE5 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 110px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.errorBase {
+	color: red;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}

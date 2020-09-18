@@ -1,0 +1,264 @@
+@CHARSET "UTF-8";
+
+body {
+  min-width: 1280px !important;
+}
+
+/* list th width */
+.operator-2-item {
+	width: 100px;
+}
+.operator-3-item {
+	width: 180px;
+}
+
+/* loading */
+.loading{
+	background-color: #35203b;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	margin-top: 0px;
+	top: 0px;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+.loading-center{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	}
+.loading-center-absolute {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 50px;
+	width: 300px;
+	margin-top: -25px;
+	margin-left: -150px;
+
+}
+.object{
+	width: 18px;
+	height: 18px;
+	background-color: #FFF;
+	float: left;
+    margin-top: 15px;
+	margin-right: 15px;
+	-moz-border-radius: 50% 50% 50% 50%;
+	-webkit-border-radius: 50% 50% 50% 50%;
+	border-radius: 50% 50% 50% 50%;
+	-webkit-animation: object 1s infinite;
+	animation: object 1s infinite;
+}
+.object:last-child {
+	margin-right: 0px;
+	}
+
+.object:nth-child(9){
+	-webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+	}
+.object:nth-child(8){
+	-webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+	}
+.object:nth-child(7){
+	-webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+	}	
+.object:nth-child(6){
+	-webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+	}
+.object:nth-child(5){
+	-webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+	}
+.object:nth-child(4){
+	-webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+	}
+.object:nth-child(3){
+	-webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+	}
+.object:nth-child(2){
+	-webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+	}								
+
+@-webkit-keyframes object{
+50% {
+    -ms-transform: translate(0,-50px); 
+   	-webkit-transform: translate(0,-50px);
+    transform: translate(0,-50px);
+	}
+}		
+@keyframes object{
+50% {
+    -ms-transform: translate(0,-50px); 
+   	-webkit-transform: translate(0,-50px);
+    transform: translate(0,-50px);
+	}
+}
+
+.loading-indicator-overlay {
+	background-color: #FFFFFF;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.table-search {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.error-tip {
+	color: #a94442;
+}
+
+#top_nav {
+	background: #101010;
+}
+
+#left_menu {
+	background: #2B2F3E;
+}
+
+.save-btn-div {
+	text-align: center;
+}
+
+.page-header-title {
+	font-size:20px;
+	padding-bottom: 9px;
+    margin: 15px 0px 20px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.text-center-style{
+	 text-align:center;
+}
+
+*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+#left_menu{width:220px; height: 100%; position: fixed; margin-left: -220px; left: 220px;}
+#jquery-accordion-menu{height: 100%; background: #2B2F3E;}
+.filterinput{
+	background-color:rgba(249, 244, 244, 0);
+	border-radius:15px;
+	width:90%;
+	height:30px;
+	border:thin solid #FFF;
+	text-indent:0.5em;
+	font-weight:bold;
+	color:#FFF;
+}
+#menu-list a{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	white-space:nowrap;
+	width:100%;
+}
+
+.emcolor{
+	color : red;
+}
+
+.specdefault{
+    border: 1px dotted;
+    cursor: pointer;
+    line-height: 20px;
+}
+.specspan {
+	border: 1px solid #9CF;
+	cursor: pointer;
+	line-height: 20px;
+	background-color: #FFC;
+	display: block;
+	float: left;
+	margin-right: 3px;
+	margin-top: 3px;
+	white-space: nowrap;
+}
+
+.specdiv {
+    border: 1px solid #9CF;
+    cursor: pointer;
+    line-height: 20px;
+    background-color: #FFC;
+}
+
+.target_box {
+    width: 300px;
+    padding: 3px;
+    border: 1px solid #AAA;
+    background-color: #FFF;
+}
+
+.specsna {
+    border: 1px solid #9CF;
+    cursor: not-allowed;
+    line-height: 20px;
+    color: #CCC;
+    background-color: #FFF;
+    display: block;
+    float: left;
+    margin-right: 3px;
+    margin-top: 3px;
+    white-space: nowrap;
+}
+
+.spec-select{
+	position: absolute;
+	z-index: 999;
+}
+
+.spec-padding-3Px{
+	padding: 3px;
+}
+
+.table-page {
+    position: relative;
+    background-color: #ecf3fd;
+    padding-top: 5px;
+}
+
+.button-operator{
+	margin-top: 20px;
+}
+
+.sel-input-item-left{
+	margin-left: 20PX;
+}
+
+.sel-input-item-top{
+	margin-top: 20PX;
+}
+
+.option-line{
+	display:inline;
+}
+
+/*退款详情*/
+.tuikuan-div{
+	text-align: center;
+}
+
+.table-bordered > tbody > tr > td {
+	vertical-align: middle !important;
+}
+
+.flash_box {
+	display: none;
+}
+
+.flash_box_show {
+	display: block !important;
+}
+
+.upload_div_content {
+	display: none;
+}

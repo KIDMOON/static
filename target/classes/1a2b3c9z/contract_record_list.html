@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="favicon.ico" />
+<title>淘汰合同记录一览</title>
+<link rel="stylesheet" type="text/css" href="media/css/default.css">
+</head>
+<body>
+	<div id="top_nav"></div>
+	<div class="container-fluid all">
+		<div id="left_menu"></div>
+		<div class="maincontent row">
+			<ul class="breadcrumb">
+				<li class="active">淘汰合同记录</li>
+			</ul>
+			<div class="container-fluid">
+				<!-- 搜索 -->
+				<div class="row" style="margin-bottom: 10px;">
+					<div class="col-md-12" id="div_search">
+						<div class="form-inline mb10">
+                            <div class="form-group sel-input-item-left">                     
+                               	<input id="text_nickName" class="form-control col-xs-3" type="text" placeholder="昵称">
+                           	</div> 
+                           	<div class="form-group" style="margin-left :10px">                       
+                               	<button type="button" class="btn btn-primary" id="btn-search">搜索</button>
+                           	</div>  
+                           	<div id="sum-div" style="float: right;"></div> 
+                       </div>  
+	                </div> 
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<table class="table table-hover table-bordered">
+							<thead>
+								<tr>
+									<th style='width: 60px; text-align: center;'>No.</th>
+									<th>用户</th>
+									<th>合同装备数量</th>
+									<th>合同总价值</th>
+									<th>合同概率</th>
+									<th>合同得到的武器</th>
+									<th>合同得到的武器价格</th>
+									<th style="width: 220px;">合同时间</th>
+								</tr>
+							</thead>
+							<tbody>
+							
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<input type="hidden" id="hid_pageIndex" />
+		</div>
+	</div>
+	
+	<a href="#top" id="goTop"><i class="fa fa-angle-up fa-3x"></i></a>
+
+	<script type="text/javascript" src="media/js/default.js"></script>
+    <script type="text/javascript" src="js/contract_record_list.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="favicon.ico" />
+<title>阿里支付账号设置帮助</title>
+<link rel="stylesheet" type="text/css" href="media/css/default.css">
+</head>
+<body>
+	<div class="container-fluid all" style="font-weight: bolder;">
+		1、登录支付宝成功后，打开网页<a href="https://openhome.alipay.com/platform/keyManage.htm#" target="_blank">https://openhome.alipay.com/platform/keyManage.htm#</a><br />
+		<br /><br />
+		2、得到第一个内容【APPID】，如下图<br />
+		<img src="media/images/alipay_help10.png" /><br />
+		<br /><br />
+		3、下载工具<a href="media/rs/secret_key_tools_RSA_win.zip" target="_blank">secret_key_tools_RSA_win.zip</a><br />
+		<br /><br />
+		4、打开工具，到文件夹双击【RSA签名验签工具.bat】，如下图<br />
+		<img src="media/images/alipay_help02.png" /><br />
+		<br /><br />
+		5、在弹出的窗口中，点击【生成密钥】按钮，如下图<br />
+		<img src="media/images/alipay_help03.png" /><br />
+		<br /><br />
+		6、生成密钥后，如下图：<br />
+		<img src="media/images/alipay_help04.png" /><br />
+		<br /><br />
+		7、得到第二个和第三个内容，第二个是【商户应用私钥】，第三个是【商户应用公钥】<br />
+		<br /><br />
+		8、将【商户应用公钥】的内容拷贝到网页中的【应用公钥】输入框中，如下进行操作<br />
+		<img src="media/images/alipay_help05.png" /><br />
+		<img src="media/images/alipay_help06.png" /><br />
+		<img src="media/images/alipay_help07.png" /><br />
+		<img src="media/images/alipay_help08.png" /><br />
+		<br /><br />
+		9、设置成功后得到第四个内容，是【支付宝公钥】，如下图<br />
+		<img src="media/images/alipay_help09.png" /><br />
+		<img src="media/images/alipay_help11.png" /><br />
+		<br /><br />
+		10、设置第五个内容【授权回调地址】，如下图，输入格式：http://kxcsgo.com/api/alipay/notifyAliPay<br />
+		<img src="media/images/alipay_help14.png" /><br />
+		<br /><br />
+		11、这样只需要保留第一个内容【APPID】,第四个内容【支付宝公钥】和第二个内容【商户应用私钥】，第五个内容【授权回调地址】到后台设置中即可，如下图的两个内容<br />
+		<img src="media/images/alipay_help11.png" /><br />
+		<img src="media/images/alipay_help12.png" /><br />
+		<img src="media/images/alipay_help13.png" /><br />
+	</div>
+</body>
+</html>

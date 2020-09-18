@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" href="favicon.ico" />
+	<title>文字明细</title>
+	<link rel="stylesheet" type="text/css" href="media/css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/box_edit.css">
+</head>
+<body>
+<div id="top_nav"></div>
+<div class="container-fluid all">
+	<div id="left_menu">
+	</div>
+	<div class="maincontent row">
+		<ul class="breadcrumb">
+			<li>文字明细</li>
+		</ul>
+		<div class="container-fluid">
+			<div class="row exitshopinfo">
+				<div class="col-md-12">
+					<form class="form-horizontal" role="form">
+						<div class="form-group" id="div_pictures" style="margin-bottom: 0;">
+							<label class="col-sm-1 control-label"><em>*</em><span>文章缩略图</span></label>
+							<div class="col-xs-7 clearbor">
+								<div class="upFile clearfix" id="div_pictureUpload" style="margin-left: 2px;">
+									<div class="bgImg">
+										<img src="media/images/picture_upload.png" id="img-background" width="100" height="100">
+									</div>
+									<div class="adds">
+										<input id="btn-pictureUpload" type="button">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-1 control-label" data-i18n="type"><em>*</em><span>所属</span></label>
+							<div class="col-sm-4">
+								<select class="form-control" id="select_articleCategory">
+								</select>
+							</select>
+							</div>
+							<label class="col-sm-1 control-label"><span>标签</span></label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="txt_tips">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-1 control-label" ><em>*</em><span>标题</span></label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="txt_titleFirst">
+							</div>
+							<label class="col-sm-1 control-label" ><span>子标题</span></label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="txt_titleSecond">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-1 control-label"><span>meta关键字</span></label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="txt_keywords">
+							</div>
+							<label class="col-sm-1 control-label"><span>meta描述</span></label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="txt_description">
+							</div>
+						</div>
+						<!-- 文本框 -->
+						<div class="edit-inner" id="ueditor">
+							<p class="mb10 m-text">
+								<strong>内容</strong>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="text-center margin-bottom-30" style="margin-top: 20px;">
+				<button id="btn-detail-return" class="btn btn-default">返回</button>&nbsp;&nbsp;
+				<button id="btn-detail-edit" class="btn btn-success">保存</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<input type="hidden" name="hid_articleId" id="hid_articleId" />
+
+<script type="text/javascript" src="media/js/default.js"></script>
+<script type="text/javascript" charset="utf-8" src="media/js/ueditor.js"></script>
+<script type="text/javascript" src="js/article_edit.js"></script>
+</body>
+</html>

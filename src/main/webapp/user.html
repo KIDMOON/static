@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta name="renderer" content="webkit" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description"  content="kxcsgo为网友提供最全的CSGO开箱技巧,KXCSGO开箱平台一个可以免费白嫖的CSGO开箱平台，KXCSGO平台是全网最专业的CSGO饰品交易平台,是唯一能立即取回的CSGO开箱平台，方便快捷的CSGO游戏道具交易，便捷、安全、诚信的服务，为您提供愉悦的steam饰品购买体验!" />
+	<meta name="keywords"  content="kxcsgo,kxcsgo开箱,csgo开箱,csgo免费开箱,csgo开箱网,csgo开箱网站,csgo饰品,csgo饰品交易,csgo交易,csgo交易平台" />
+	<title>KXCSGO-开箱CSGO饰品交易平台</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- css -->
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+<div class="page">
+	<div id="mall_header"></div>
+
+	<div class="page_content">
+		<div class="title">
+			个人中心
+			<span>HOME PAGE</span>
+		</div>
+
+		<div class="user_panel">
+			<div class="user_information">
+				<img class="avatar" id="user_avter" src="images/avatar.jpg">
+				<div class="info">
+					<div class="name" id="user_nickName">用户名</div>
+					<div class="balance">K币: <font color="#ffa200" id="userFirstMoney">0 K币</font> <a href="javascript:void(0);" onclick="recharge();"><i class="fa fa-plus-square" aria-hidden="true"></i></a></div>
+					<div class="balance">积分: <font color="#ffa200" id="userThirdMoney">0 点</font></div>
+
+					<div class="ref_link">推广链接: <font color="#fff" id="partner_url">http://kxcsgo.com</font></div>
+					<!--把这里的推广链接和推广回扣放到推广合作的tab里-->
+					<div class="ref_count">推广人数: <font color="#fff" id="partnerstat_count">0</font></div>
+				</div>
+			</div>
+			<div class="user_settings">
+				<form action="" method="">
+					<input class="steam_input" type="text" id="trade_url" placeholder="您的交易链接">
+					<button class="yellow_button" onclick="saveTradeUrl()">保存</button>
+				</form>
+				<a target="_blank" href="https://steamcommunity.com/id/me/tradeoffers/privacy#trade_offer_access_url">找到我的交易链接 ></a>
+				<div class="toggle">
+					<span>需要帮助？</span>
+					<i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+					<div class="toggle_text">
+
+						<p>机器人自动发货，如果24小时内没有发货请检查交易报价链接能否交易，如果有任何问题请联系官方客服QQ（996600893）。</p>
+						
+						<p class="important-word">请确保报价链接对应您自己的Steam账号并填写正确，否则导致无法获得皮肤我们概不负责。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="inventory content_bg">
+			<div class="navigation" id="drops-mode-btns">
+				<div class="top">
+					<a class="active" id="showActiveDrops" data-status="000">我的物品</a>
+					<a id="showDropsHistory" data-status="">历史掉落</a>
+					<a id="showOnRolad" data-status="001006">取回中</a>
+					<a id="moneyRecord" data-status="">充值记录</a>
+				</div>
+				<div class="total_price">总价值: <font color="#ffa200"><i id="allitemsPrice">0.00</i> K币</font></div>
+			</div>
+			<div class="info">
+				<div class="selected_items">
+					<div class="selectred_count">选中: <font color="#ffa200"><i id="countSelected">0</i> 个物品</font></div>
+					<div class="selectred_price">价值: <font color="#ffa200"><i id="itemsSelectedPrice">0.00</i> K币</font></div>
+				</div>
+				<div class="items_action">
+					<a id="multipleSell1" data-status="0">出售</a>
+					<a id="wantPick" data-status="0">取回</a>
+				</div>
+			</div>
+			<div class="content" id="mypackagediv">
+			</div>
+			<div id="pagination" style="text-align: center; margin: 15px 0 10px 0;">				
+				<ul></ul>
+			</div>
+		</div>
+	</div>
+	<div id="mall_footer"></div>
+</div>
+<div id="mall_popup"></div>
+</body>
+<!-- javascript -->
+<script type="text/javascript" src="js/default.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap-paginator.js"></script>
+<script type='text/javascript' src='js/jquery/clipboard/clipboard.min.js'></script>
+<script type="text/javascript" src="js/user.js"></script>
+</html>

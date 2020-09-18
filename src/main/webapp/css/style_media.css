@@ -1,0 +1,2216 @@
+
+/* ------------------------------ */
+/* - Для экранов меньше  1500px - */
+/* ------------------------------ */
+
+@media (max-width: 1500px){
+
+/* ------------ login ----------- */
+
+	.login{
+		width: 260px;
+		height: 90px;
+		position: relative;
+	}
+
+	.login .steam{
+		width: 150px;
+		padding-left: 25px;
+	}
+
+	.login .steam img{
+		position: absolute;
+		z-index: 1;
+		left: 0;
+	}
+
+	.login .steam .icon{
+		height: 31px;
+		margin-left: 0px;
+	}
+
+	.login .steam .text{
+		font-size: 20px;
+		margin-left: 0px;
+		width: 100%;
+		text-align: center;
+		margin-bottom: auto;
+	}
+
+	.login .steam .text span{
+		font-size: 10px;
+	}
+
+	.login .qq{
+		width: 150px;
+	}
+
+	.login .qq img{
+		position: absolute;
+		z-index: 1;
+		left: 0;
+	}
+
+	.login .qq .icon{
+		height: 31px;
+		margin-left: 0px;
+		margin-top: auto;
+	}
+
+	.login .qq .text{
+		font-size: 20px;
+		margin-left: 0px;
+		width: 100%;
+		text-align: center;
+		margin-bottom: auto;
+	}
+
+	.login .qq .text span{
+		font-size: 10px;
+	}
+
+/* ------------ case ----------- */
+
+	.case{
+		width: calc( (100% - 150px) / 4 );
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+
+/* ----------- footer ---------- */
+
+	.footer > .cpr{
+		width: 40%;
+		font-size: 14px;
+		order: 2;
+		margin-top: 50px;
+	}
+
+	.footer > .nav{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer > .nav > .menu{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-top: 30px;
+	}
+
+	.footer > .nav > .menu a{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.footer > .info{
+		width: 40%;
+		order: 3;
+		margin-top: 50px;
+	}
+
+	.footer > .info > a .studio{
+		display: block;
+		float: right; 
+		opacity: .5;
+	}
+
+	.footer > .info > a .studio:hover{
+		opacity: 1;
+	}
+
+	.footer > .info > .payments{
+		display: block;
+		float: right;
+		margin-top: 20px;
+		width: 100%;
+	}
+
+}
+
+/* ------------------------------ */
+/* - Для экранов меньше  1280px - */
+/* ------------------------------ */
+
+@media (max-width: 1280px){
+	
+/* ------------ game ----------- */
+
+	.navigation > .nav_content > .type_game{
+		width: 32px;
+		height: 32px;
+		position: relative;
+	}
+
+	.navigation > .nav_content > .type_game::after{
+		content: '';
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		background: url(../images/icons/mini_arrow_bottom.png);
+		right: -25px;
+		top: 12px;
+	}
+
+	.navigation > .nav_content > .type_game .games .active{ order: -1; z-index: 2; opacity: 1;}
+	
+	.navigation > .nav_content > .type_game .games{
+		height: auto;
+	}
+
+	.navigation > .nav_content > .type_game .games li{
+		z-index: 1;
+		transition: all .2s ease;
+		opacity: 0;
+		top: 0;
+		position: absolute;
+	}
+
+	.navigation > .nav_content > .type_game .games:hover li{
+		position: relative;
+		opacity: 1;
+		margin-bottom: 10px;
+	}
+
+/* ------------ case ----------- */
+
+	.case{
+		width: calc( (100% - 100px) / 3 );
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+
+/* -------- information -------- */
+	
+	.information{
+		width: 100%;
+		background: url(../images/bg/info_bg.jpg) bottom center;
+		background-size: auto 100%;
+		margin-top: -80px;
+		padding-top: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 50px 0px 50px;
+	}
+
+	.information > .desc{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 60px;
+		margin-bottom: 0px;
+	}
+
+	.information > .desc > .logo{
+		width: 250px;
+		height: 62px;
+		background: url(../images/logos/big_logo.png);
+		background-size: 100%;
+		margin: 0 auto;
+	}
+
+	.information > .desc > .yellow_button{
+		width: calc( (100% - 30px) / 2 );
+		font-size: 18px;
+		margin: 0px 0px 0px 0px;
+	}
+
+	.information > .stat_block{
+		width: calc( (100% - 60px) / 3 );
+		background: rgba(0,0,0,0.3);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 42px 20px 42px 20px;
+		border-radius: 4px;
+		margin-top: 30px;
+		margin-bottom: 60px;
+	}
+
+/* -------- page content -------- */
+
+	.page_content{
+		width: calc( 100% - 100px );
+		padding: 30px 0px 30px 0px;
+		margin: 0 auto;
+	}
+
+/* ----- game mode contract ---- */
+
+	.inventory > .content > .item,
+	.case_content > .content > .item,
+	.shop_content > .content > .item,
+	.percent_case > .content > .item
+	{
+		width: calc( (100% - 150px) / 5 );
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 15px;
+		position: relative;
+		cursor: pointer;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+		border: 1px solid rgba(0,0,0,0);
+		transition: all .2s ease;
+		align-self: stretch;
+	}
+
+}
+
+/* ------------------------------ */
+/* - Для экранов меньше  1170px - */
+/* ------------------------------ */
+
+@media (max-width: 1170px){
+
+/* ----- game mode contract ---- */
+
+	.inventory > .content > .item,
+	.case_content > .content > .item,
+	.shop_content > .content > .item,
+	.percent_case > .content > .item
+	{
+		width: calc( (100% - 120px) / 4 );
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 15px;
+		position: relative;
+		cursor: pointer;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+		border: 1px solid rgba(0,0,0,0);
+		transition: all .2s ease;
+		align-self: stretch;
+	}
+
+/* ------ contract settings ----- */
+
+	.contract_settings > .content{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contract_settings > .content ul{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+	
+}
+
+/* ------------------------------ */
+/* - Для экранов меньше  1024px - */
+/* ------------------------------ */
+
+@media (max-width: 1024px){
+
+	.login_form input {
+		width: calc((100% - 40px) / 1);
+	}
+	.go-login-div-a {
+		margin: 10px 20px !important;
+	}
+	.go-login-div-a .go-forget-pwd {
+		right: 18px !important;
+	}
+	.go-otherlogin-div .line {
+		width: 68px !important;
+	}
+
+	.Anchor {
+		top: 60% !important;
+	}
+
+	.Anchor .li1 {
+		display: none;
+	}
+
+/* ------------- logo ----------- */
+
+	.navigation .logo{
+		width: 173px;
+		height: 85px;
+		background: url(../images/logos/logo.png) top center no-repeat;
+		margin-left: 50px;
+		background-size: 100%;
+	}
+
+/* --------- navigation --------- */
+
+	.open_navigation{
+		display: block;
+	}
+	
+	.navigation .nav_content{
+		width: 300px;
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		position: absolute;
+		top: 0px;
+		right: -300px;
+		padding: 40px;
+		background: url(../images/bg/case_bg.png) top center no-repeat;
+		transition: all .4s ease;
+		z-index: 1;
+		background-size: 100% 100%;
+	}
+
+/* ------------ login ----------- */
+
+	.login{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		order: 4;
+	}
+
+/* ---- login (steam button) ---- */
+
+	.login .steam{
+		width: 100%;
+		height: 60px;
+		padding-left: 0px;
+		background: url(../images/buttons/button_texture.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		border-radius: 4px;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	.login .steam img{
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		display: none;
+	}
+
+	.login .steam .icon{
+		width: 62px;
+		height: 41px;
+		background: url(../images/icons/icon_steam.png) top center no-repeat;
+		background-size: auto 100%;
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	.login .steam .text{
+		width: auto;
+		font-family: Gilroy Extra Bold;
+		text-shadow: 0px 1px 1px #f5d47a;
+		font-size: 26px;
+		text-transform: uppercase;
+		color: #291b15;
+		margin-bottom: 0;
+		margin-left: 20px;
+	}
+
+	.login .steam .text span{
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-family: Gilroy Extra Bold;
+		text-shadow: 0px 1px 1px #f5d47a;
+		color: #291b15;
+		font-size: 10px;
+		margin-top: -5px;
+	}
+
+/* ------ login (qq button) ----- */
+
+	.login .qq{
+		width: 100%;
+		height: 60px;
+		padding-left: 0px;
+		background: url(../images/buttons/button_texture.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		border-radius: 4px;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	.login .qq img{
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		display: none;
+	}
+
+	.login .qq .icon{
+		width: 62px;
+		height: 41px;
+		background: url(../images/icons/icon_qq.png) top center no-repeat;
+		background-size: auto 100%;
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	.login .qq .text{
+		width: auto;
+		font-family: Gilroy Extra Bold;
+		text-shadow: 0px 1px 1px #f5d47a;
+		font-size: 26px;
+		text-transform: uppercase;
+		color: #291b15;
+		margin-bottom: 0;
+		margin-left: 10px;
+	}
+
+	.login .qq .text span{
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-family: Gilroy Extra Bold;
+		text-shadow: 0px 1px 1px #f5d47a;
+		color: #291b15;
+		font-size: 10px;
+		margin-top: -5px;
+	}
+
+/* ------- user (authorize) ----- */
+
+	.navigation .user{
+		width: 100%;
+		margin-right: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		order: -1;
+	}
+
+	.navigation .user img{
+		display: block;
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+	.navigation .user .info{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+/* ------- game variables ------- */
+
+	.navigation > .nav_content > .type_game{
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		order: 2;
+		display: none;
+	}
+
+	.navigation > .nav_content > .type_game::after{
+		display: none;
+	}
+
+	.navigation > .nav_content > .type_game .games{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		list-style-type: none;
+	}
+	
+	.navigation > .nav_content > .type_game .games li{
+		position: relative;
+		opacity: 1;
+		margin-bottom: 0px;
+	}
+
+/* ------ navigation links ------ */
+
+	.navigation > .nav_content > .menu{
+		width: 100%;
+		margin: 0 auto;
+		order: 3;
+	}
+
+	.navigation > .nav_content > .menu a{
+		width: 100%;
+		display: block;
+		color: #a5a5a7;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 32px;
+		transition: all .2s ease;
+		font-size: 18px;
+		margin-top: -56px;
+	}
+
+/* --------- live drops --------- */
+
+	.live_drops{
+		width: calc( 100% - 60px );
+		height: 80px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 15px;
+	}
+
+	.live_drop_fixed{
+		width: 100%;
+		height: auto;
+		max-width: 1920px;
+		position: fixed;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: 0px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background: url(../images/bg/center_block_bg.png) top;
+		border-bottom: 1px solid rgba(255,255,255,0.05);
+		box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.5);
+	}
+
+/* ------------ case ----------- */
+	
+	.case_block_type_1{
+		width: calc( 100% - 60px );
+		max-width: 1820px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.case_block_type_2{
+		width: 100%;
+		margin: 0 auto;
+		padding: 0px 30px 0px 30px;
+		margin-top: 40px;
+		margin-bottom: 100px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		background: url(../images/bg/center_block_bg.png) top;
+		background-color: #000;
+		position: relative;
+	}
+
+	.case{
+		width: calc( (100% - 60px) / 3 );
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+
+	.case .name{
+		width: calc( 100% - 40px );
+		font-size: 20px;
+		color: #e7e7eb;
+		text-align: center;
+		font-family: Gilroy Bold;
+		text-transform: uppercase;
+		margin-top: 20px;
+	}
+
+/* --------- game modes --------- */
+	
+	.game_modes{
+		width: calc( 100% - 60px );
+		margin: 0 auto;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #151619;
+	}
+
+/* ----------- footer ---------- */
+
+	.footer{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 100px 30px 50px 30px;
+		background: url(../images/bg/footer_bg.png) top center no-repeat;
+	}
+
+	.footer > .cpr{
+		width: 100%;
+		font-size: 14px;
+		order: 2;
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	.footer > .cpr > span{
+		display: block;
+		font-size: 20px;
+	    color: #e7e7eb;
+	    font-family: Gilroy Bold;
+	    margin: 0 auto;
+	    margin-bottom: 10px;
+	}
+
+	.footer > .nav{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer > .nav > .menu{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-top: 30px;
+	}
+
+	.footer > .nav > .menu a{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.footer > .info{
+		width: 100%;
+		order: 3;
+		margin-top: 50px;
+	}
+
+	.footer > .info > a .studio{
+		display: block;
+		float: none; 
+		opacity: .5;
+		margin: 0 auto;
+	}
+
+	.footer > .info > a .studio:hover{
+		opacity: 1;
+	}
+
+	.footer > .info > .payments{
+		display: block;
+		float: none;
+		width: 250px;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+/* -------- information -------- */
+
+	.information{
+		width: 100%;
+		background: url(../images/bg/info_bg.jpg) bottom center;
+		background-size: auto 100%;
+		margin-top: -80px;
+		padding-top: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 30px 0px 30px;
+		margin-bottom: -60px;
+	}
+
+/* -------- page content -------- */
+
+	.page_content{
+		width: calc( 100% - 60px );
+		padding: 30px 0px 30px 0px;
+		margin: 0 auto;
+	}
+
+/* ----- game mode contract ---- */
+
+	.inventory > .content > .item,
+	.case_content > .content > .item,
+	.shop_content > .content > .item,
+	.percent_case > .content > .item
+	{
+		width: calc( (100% - 90px) / 3 );
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 15px;
+		position: relative;
+		cursor: pointer;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+		border: 1px solid rgba(0,0,0,0);
+		transition: all .2s ease;
+		align-self: stretch;
+	}
+
+/* ------ game mode contract ---- */
+
+	.contract_panel > .slot{
+		width: calc( (100% - 90px) / 4 );
+		height: 230px;
+		background: rgba(0,0,0,0.12);
+		margin-bottom: 30px;
+	}
+
+/* ------ contract settings ----- */
+
+	.contract_settings > .content ul li{
+		display: inline;
+		margin-right: 30px;
+		font-size: 16px;
+	}
+
+/* -------- opening case ------- */
+
+	.opening_settings > .content{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.opening_settings > .content .yellow_button{
+		width: 150px;
+		height: 46px;
+		font-size: 18px;
+		order: 1;
+
+	}
+
+	.opening_settings > .content > .count_opening{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		order: 2;
+		margin-top: 15px;
+
+	}
+
+	.opening_settings > .content > .count_opening .title{
+		width: 100%;
+		padding-right: 0px;
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.opening_settings > .content > .total_price{
+		width: 100%;
+		text-align: center;
+		margin-top: 15px;
+		order: 3;
+	}
+
+/* --------- user panel --------- */
+
+	.user_panel > .user_information{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		background: url(../images/bg/center_block_bg.png) center;
+		padding: 20px;
+		border-radius: 4px;
+	}
+
+	.user_panel > .user_information > .info .name,
+	.user_panel > .user_information > .info .balance,
+	.user_panel > .user_information > .info .credit,
+	.user_panel > .user_information > .info .sp,
+	.user_panel > .user_information > .info .ref_link,
+	.user_panel > .user_information > .info .ref_count{
+		margin-bottom: 15px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.user_panel > .user_information > .avatar{
+		width: 80px;
+		height: 80px;
+		display: block;
+		border-radius: 60px;
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+
+	.user_panel > .user_information > .info{
+		width: 100%;
+	}
+
+	.user_panel > .user_settings{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-top: 40px;
+	}
+
+/* ---------- run game ---------- */
+	
+	.game_conteiner > .left{
+		width: 100%;
+		align-self: stretch;
+	}
+
+	.game_conteiner > .right{
+		width: 100%;
+		align-self: stretch;
+		padding-bottom: 10px;
+	}
+
+	.game_conteiner > .left .game_block:nth-child(3){
+		margin-bottom: 30px;
+	}
+
+/* ------------- shop ----------- */
+
+	.shop_settings > .sort,
+	.shop_settings > .tab{
+		width: calc((100% - 30px) / 2);
+		height: 56px;
+	}
+
+	.shop_settings > .search{
+		width: 100%;
+		height: 56px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 30px;
+	}
+
+/* ---------- credit block ------ */
+
+	.my_credit_block > .mc_center{
+		width: 100%;
+		height: auto;
+		margin-top: 0px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		align-self: none;
+		margin-bottom: 30px;
+	}
+
+	.my_credit_block > .mc_center > .mc_information{
+		width: 100%;
+		height: auto;
+		background: url(../images/bg/content_center_bg.png) center;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.my_credit_block > .mc_top{
+		order: 1;
+	}
+
+	.my_credit_block > .mc_bottom{
+		order: 4;
+	}
+
+	.my_credit_block > .mc_left{
+		width: 100%;
+		margin-top: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		order: 2;
+	}
+
+	.my_credit_block > .mc_right{
+		width: 100%;
+		margin-top: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		order: 3;
+	}
+
+	.my_credit_block > .mc_top > .item,
+	.my_credit_block > .mc_bottom > .item{
+		width: calc( (100% - 60px) / 3 );
+	}
+
+	.my_credit_block > .mc_top > .item:nth-last-child(1),
+	.my_credit_block > .mc_bottom > .item:nth-last-child(1){
+		margin-top: 30px;
+		width: calc( (100% - 30px) / 2 );
+		height: auto;
+	}
+
+	.my_credit_block > .mc_top > .item:nth-last-child(2),
+	.my_credit_block > .mc_bottom > .item:nth-last-child(2){
+		margin-top: 30px;
+		width: calc( (100% - 30px) / 2 );
+		height: auto;
+	}
+
+	.my_credit_block > .mc_left > .item,
+	.my_credit_block > .mc_right > .item{
+		width: calc( (100% - 30px) / 2 );
+		margin-bottom: 0px;
+		height: auto;
+	}
+
+	.my_credit_block > .mc_right > .item{
+		margin-bottom: 30px;
+	}
+
+	.free_cases > .free_case{
+		width: calc((100% - 60px) / 3);
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+		z-index: 2;
+		margin-bottom: 30px;
+		position: relative;
+		transition: all .3s ease-in-out;
+	}
+
+	.percent_case > .info form{
+		width: 100% ;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 30px;
+	}
+
+	.percent_case > .percent_case_sort a{
+		width: 100%;
+	}
+
+	.percent_case > .percent_case_sort .type{
+		width: 100%;
+		padding: 10px 15px 10px 15px;
+		border: 1px solid rgba(255,255,255,0.05);
+		border-radius: 4px;
+		margin-right: 10px;
+		margin-left: 10px;
+		transition: all .2s ease-in-out;
+		text-align: center;
+		margin-top: 15px;
+	}
+
+	.percent_game > .left{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+
+	.percent_game > .right{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+
+	.percent_game .item .inner_bg{
+		width: 100%;
+		height: 100%;
+		background: url(../images/bg/inner_bg.png);
+		position: absolute;
+		animation: inner_effect 20s linear infinite both;
+		opacity: 0.5;
+		display: none;
+	}
+
+	.percent_game .item{
+		width: 250px;
+		height: 250px;
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		position: relative;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+		border: 1px solid rgba(0,0,0,0);
+		transition: all .2s ease;
+		border-radius: 500px;
+		position: relative;	
+	}
+
+	.percent_game .item .chance{
+		width: 80px;
+		height: 80px;
+		background: url(../images/bg/icon_bg.png);
+		background-size: 100% 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		font-family: Gilroy Extra Bold;
+		text-shadow: 0px 1px 1px #f5d47a;
+		font-size: 26px;
+		text-transform: uppercase;
+		text-align: center;
+		color: #291b15;
+		position: absolute;
+		z-index: 1;
+	}
+
+	.percent_game > .right > .item .chance{
+		left: calc( 100% - 80px );
+		top: 0px;
+	}
+
+	.vs_block{
+		width: 100px;
+		height: 100px;
+		background: url(../images/icons/vs.png);
+		position: absolute;
+		top: calc( 100% - 50px );
+		right: calc( 50% - 50px );
+		background-size: 100% 100%;
+	}
+
+	.percent_game_nav{
+		width: 100%;
+		margin-top: -20px;
+	}
+
+	.percent_game_nav .yellow_button{
+		width: 100%;
+		margin: 0 auto;
+		font-size: 20px;
+	}
+
+	.percent_game_nav .custom_range{
+		width: 100%;
+		height: 10px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		margin-top: 30px;
+	}
+
+	/* battles */
+	
+	.battle_navigation,
+	.battle_room_navigation{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.battle_navigation > .buttons,
+	.battle_room_navigation > .buttons{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	.battle_navigation .gray_button,
+	.battle_room_navigation .gray_button{
+		height: 48px;
+		font-size: 18px;
+		font-family: Gilroy Bold;
+		margin-right: 0px;
+		opacity: 0.5;
+		width: calc( 50% - 15px );
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		align-self: stretch;
+	}
+
+	.battle_navigation .green_button,
+	.battle_room_navigation .green_button{
+		height: 48px;
+		font-size: 18px;
+		width: calc( 50% - 15px );
+	}
+
+	.battle_search .button{
+		width: 25%;
+		padding: 20px 20px 20px 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		font-family: Gilroy Bold;
+		font-size: 18px;
+		text-transform: uppercase;
+		text-align: center;
+		color: #cecece;
+		cursor: pointer;
+		border-right: 1px solid rgba(255,255,255,0.05);
+		border-bottom: 1px solid rgba(255,255,255,0.05);
+		align-self: stretch;
+	}
+
+	.battle_search .button:last-of-type{
+		border-right: none;
+	}
+
+	.battle_search form{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 30px;
+	}
+
+
+	.battle_search input{
+		margin-right: 15px;
+		height: 40px;
+		width: calc( 100% - 150px - 20px );
+	}
+
+	.battle_search button{
+		height: 40px;
+		width: 150px;
+	}
+
+	.battle_block > .top .battle_case{width: 200px;}
+	.battle_block > .top .price{width: calc( 200px - 5px );}
+	.battle_block > .top .players{width: calc( 100% - 600px - 5px );}
+	.battle_block > .top .actions{width: 200px;}
+
+	.battle_block > .battle_line .battle_case{width: 200px;}
+	.battle_block > .battle_line .price{width: calc( 200px - 5px );}
+	.battle_block > .battle_line .players{width: calc( 100% - 600px - 5px );}
+	.battle_block > .battle_line .actions{width: 200px;}
+
+	.battle_block > .battle_line .actions .minimal_button,
+	.battle_block > .battle_line .actions .yellow_button{
+		width: 100%;
+		height: 40px;
+		font-size: 20px;
+	}
+
+	.battle_block > .top{
+		display: none;
+	}
+
+	.battle_room_bottom > .minimal_button{
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.battle_room_bottom > .minimal_button:nth-child(2){
+		order: 1;
+	}
+
+	.battle_room_bottom > .minimal_button:nth-child(1){
+		order: 2;
+	}
+
+	.battle_room_bottom > .case_name{
+		width: 100%;
+		order: -1;
+	}
+
+	.battle_room > .left,
+	.battle_room > .right
+	{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.battle_room > .left .user{
+		width: 300px;
+		height: 300px;
+		background: url(../images/bg/content_center_bg.png) center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		position: relative;
+		transition: all .2s ease;
+		position: relative;
+		padding: 30px;
+	}
+
+	.battle_room > .right .user{
+		width: 300px;
+		height: 300px;
+		background: url(../images/bg/content_center_bg.png) center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-end;
+		position: relative;
+		transition: all .2s ease;
+		position: relative;
+		padding: 30px;
+	}
+
+	.battle_room > .left .user .avatar,
+	.battle_room > .right .user .avatar
+	{
+		width: 70px;
+		height: 70px;
+		border-radius: 70px;
+		overflow: hidden;
+		border: 3px solid #fdc400;
+		order: -1;
+		margin: 0 auto;
+	}
+
+	.battle_room > .right .user .avatar{
+		margin-top: 90px;
+	}
+
+	.battle_room > .left .user .avatar img,
+	.battle_room > .right .user .avatar img
+	{
+		width: 100%;
+		height: 100%;
+	}
+
+	.battle_room > .left .user .name,
+	.battle_room > .right .user .name
+	{
+		color: #868e9b;
+		text-transform: uppercase;
+		font-size: 22px;
+		font-family: Gilroy Bold;
+		padding: 30px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.battle_room > .left .user .name{
+		margin-top: -60px;
+		padding: 0px;
+	}
+
+	.battle_room > .right .user .name{
+		margin-top: auto;
+		padding: 0px;
+	}
+}
+
+/* ------------------------------ */
+/* - Для экранов меньше  768px -- */
+/* ------------------------------ */
+
+@media (max-width: 768px){
+
+	/* ------------ case ----------- */
+
+	.case{
+		width: calc( (100% - 30px) / 2 );
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+
+	.case .name{
+		width: calc( 100% - 40px );
+		font-size: 20px;
+		color: #e7e7eb;
+		text-align: center;
+		font-family: Gilroy Bold;
+		text-transform: uppercase;
+		margin-top: 20px;
+	}
+
+/* -------- information -------- */
+
+	.information{
+		width: 100%;
+		background: url(../images/bg/info_bg.jpg) bottom center;
+		background-size: auto 100%;
+		margin-top: -80px;
+		padding-top: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 30px 40px 30px;
+		margin-bottom: -60px;
+	}
+
+	.information > .desc{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 60px;
+		margin-bottom: 0px;
+	}
+
+	.information > .desc > .yellow_button{
+		width: 100%;
+		font-size: 18px;
+		margin: 0px 0px 30px 0px;
+	}
+
+	.information > .stat_block{
+		width: 100%;
+		background: rgba(0,0,0,0.3);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 30px 20px 30px 30px;
+		border-radius: 4px;
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+
+/* ------ game mode contract ---- */
+
+	.contract_panel > .slot{
+		width: calc( (100% - 60px) / 3 );
+		height: 230px;
+		background: rgba(0,0,0,0.12);
+		margin-bottom: 30px;
+	}
+
+/* ------ contract settings ----- */
+
+	.contract_settings > .content ul li{
+		display: inline;
+		margin-right: 10px;
+		margin-left: 10px;
+		font-size: 12px;
+	}
+
+/* ------ rolling section ------ */
+
+	.rolling_section > .rolling_mini{
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	.rolling_section > .rolling_info{
+		width: 100%;
+		align-self: stretch;
+		background: #000;
+		margin-bottom: 20px;
+		background: url(../images/bg/content_center_bg.png) top no-repeat;
+		position: relative;
+		padding: 20px;
+	}
+
+	.rolling_section > .rolling_info .last_winner{
+		width: 100%;
+		height: 90px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		cursor: default;
+		margin-top: 10px;
+	}
+
+	.rolling_section > .rolling_info .last_winner .item{
+		width: 100%;
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.inventory > .navigation > .top{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	.inventory > .navigation > .top a{
+		color: #54575c;
+		font-family: Gilroy Extra Bold;
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-right: 0px;
+		transition: all .2s ease;
+	}
+
+	.inventory > .navigation > .total_price{
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.inventory > .info .selected_items{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		width: 100%;
+	}
+
+	.inventory > .info .selected_items .selectred_count,
+	.inventory > .info .selected_items .selectred_price{
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+
+	.inventory > .info .items_action{
+		width: 100%;
+	}
+
+	.inventory > .info .items_action a{
+		color: #54575c;
+		font-size: 14px;
+		transition: all .2s ease;
+		margin-left: 0px;
+		width: 100%;
+		padding: 10px 5px 10px 5px;
+		border: 1px solid #54575c;
+		display: block;
+		text-align: center;
+		margin-top: 20px;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.inventory > .info .items_action a:hover{
+		color: #fff;
+		border: 1px solid #fff;
+	}
+	
+/* ------------- wnd ------------ */
+
+	.wnd{
+		width: 100%;
+		height: 100vh;
+		background: url(../images/bg/center_block_bg.png) top center;
+		background-size: auto auto;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 20;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 50px;
+	}
+
+	.closed_wnd{
+		width: 34px;
+		height: 34px;
+		background: url(../images/icons/closed_wnd.png);
+		background-size: 100% 100%;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		cursor: pointer;
+		transition: all .5s ease-in-out;
+	}
+
+	.notice_pic_wnd .closed_wnd {
+		right: 20px;
+		top: 20px;
+	}
+
+	.notice_pic_img {
+		margin: 40% auto 0 auto;
+	}
+
+	.content_wnd{
+		width: 100%;
+		height: calc( 100vh - 200px );
+	}
+
+	.recharge_form .new_select{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.recharge_form input{
+		width: 100%;
+		height: 56px;
+		margin-bottom: 20px;
+	}
+
+	.recharge_form .fast_input{
+		width: calc((100% - 30px) / 2);
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-radius: 4px;
+		background: url(../images/buttons/gray_button_texture.png);
+		background-size: auto 100%;
+		text-align: center;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+		font-family: Gilroy Bold;
+		font-size: 18px;
+		color: #ffba00;
+		margin-bottom: 18px;
+		cursor: pointer;
+		transition: all .2s ease-in-out;
+	}
+
+	.recharge_form .yellow_button{
+		width: 100%;;
+		height: 56px;
+		margin-bottom: 20px;
+	}
+
+	.battle_block > .top .battle_case{width: 100%;}
+	.battle_block > .top .price{width: 100%;}
+	.battle_block > .top .players{width: 100%;}
+	.battle_block > .top .actions{width: 100%;}
+
+	.battle_block > .battle_line .battle_case{width: 100%;}
+	.battle_block > .battle_line .price{width: 100%;}
+	.battle_block > .battle_line .players{width: 100%; padding-top: 20px;}
+	.battle_block > .battle_line .actions{width: 100%;}
+
+	.battle_block > .battle_line .actions .minimal_button,
+	.battle_block > .battle_line .actions .yellow_button{
+		width: calc( 50% - 15px);
+		height: 40px;
+		font-size: 20px;
+	}
+
+	.battle_block > .battle_line{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 18px;
+		text-align: center;
+		margin-top: 30px;
+	  	background-size: 100% auto;
+		border-radius: 4px;
+	}
+
+}
+
+/* ------------------------------ */
+/* - Для экранов меньше  640px -- */
+/* ------------------------------ */
+
+@media (max-width: 640px){
+
+/* --------- live drops --------- */
+
+	.live_drops .title{
+		display: none;
+	}
+
+	.live_drops{
+		width: calc( 100% - 40px );
+		height: 80px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 15px;
+	}
+	
+	.live_drops .items{
+		width: 100%;
+	}
+
+	.live_drops .items .row .item{
+		width: 80px;
+		height: 80px;
+		background: url(../images/bg/ld_item_bg.png);
+		background-size: 100% 100%;
+		margin-left: 10px;
+		margin-right: 10px;
+		position: relative;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.live_drop_fixed{
+		width: 100%;
+		height: auto;
+		max-width: 1920px;
+		position: fixed;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: 0px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background: url(../images/bg/center_block_bg.png) top;
+		border-bottom: 1px solid rgba(255,255,255,0.05);
+		box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.5);
+	}
+
+/* --------- game modes --------- */
+	
+	.game_modes{
+		width: calc( 100% - 60px );
+		margin: 0 auto;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #151619;
+	}
+
+	.game_modes .text{
+		font-size: 24px;
+		color: #e7e7eb;
+		text-align: center;
+		font-family: Gilroy Bold;
+		text-transform: uppercase;
+		margin-top: 15px;
+		cursor: default;
+	}
+
+/* ------------ case ----------- */
+
+	.case{
+		width: 100%;
+		background: url(../images/bg/case_bg.png);
+		background-size: 100% auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	.case .name{
+		width: 100%;
+		font-size: 20px;
+		color: #e7e7eb;
+		text-align: center;
+		font-family: Gilroy Bold;
+		text-transform: uppercase;
+		margin-top: 20px;
+	}
+
+/* ----------- footer ----------- */
+
+	.footer > .nav > .menu a{
+		display: block;
+		width: 100%;
+		color: #a5a5a7;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: all .2s ease;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.footer > .nav a:hover{
+		color: #fff;
+	}
+	
+/* ----- game mode contract ---- */
+
+	.inventory > .content > .item,
+	.case_content > .content > .item,
+	.shop_content > .content > .item,
+	.percent_case > .content > .item
+	{
+		width: calc( (100% - 60px) / 2 );
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 15px;
+		position: relative;
+		cursor: pointer;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+		border: 1px solid rgba(0,0,0,0);
+		transition: all .2s ease;
+		align-self: stretch;
+	}
+
+/* ------ game mode contract ---- */
+
+	.contract_panel > .slot{
+		width: calc( (100% - 30px) / 2 );
+		height: 360px;
+		background: rgba(0,0,0,0.12);
+		margin-bottom: 30px;
+	}
+
+	.inventory > .navigation > .top a{
+		color: #54575c;
+		font-family: Gilroy Extra Bold;
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-right: 0px;
+		transition: all .2s ease;
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.user_panel > .user_settings form .yellow_button{
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.user_panel > .user_settings form .yellow_big{
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.user_panel > .user_settings form .steam_input{
+		width: 100%;
+		text-align: center;
+	}
+
+	.user_panel > .user_settings form .code_input{
+		width: 100%;
+		text-align: center;
+	}
+
+	.user_panel > .user_settings > a{
+		width: auto;
+		display: block;
+		margin: 0 auto;
+		text-decoration: underline;
+		transition: all .2s ease;
+		margin-top: 10px;
+	}
+
+	.user_panel > .user_information form{
+		display: block;
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.user_panel > .user_information form .yellow_button{
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.user_panel > .user_information form .contact_input{
+		width: 100%;
+		text-align: center;
+	}
+
+/* ---------- run game ---------- */
+
+	.game_settings > .column,
+	.game_settings > form > .column
+	{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 20px;
+	}
+
+	.game_settings .fast_insert{
+		width: calc(( 100% - 50px ) / 4);
+		height: 56px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		font-size: 22px;
+		background: #000;
+		text-transform: uppercase;
+		border-radius: 4px;
+		background: url(../images/bg/pgnt.png) center center;
+		font-family: Gilroy Extra Bold;
+		color: #a5a8b6;
+		cursor: pointer;
+		transition: all .2s ease;
+	}
+
+	.game_settings .buttons > .yellow_button,
+	.game_settings > form > .buttons > .yellow_button
+	{
+		width: 100%;
+		font-size: 20px;
+		margin-top: 20px;
+	}
+/* ---------- credit block ------ */
+
+	.my_credit_block > .mc_top{
+		order: 1;
+	}
+
+	.my_credit_block > .mc_bottom{
+		order: 4;
+	}
+
+	.my_credit_block > .mc_left{
+		width: 100%;
+		margin-top: 0px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		order: 2;
+	}
+
+	.my_credit_block > .mc_right{
+		width: 100%;
+		margin-top: 0px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		order: 3;
+	}
+
+	.my_credit_block > .mc_top > .item,
+	.my_credit_block > .mc_bottom > .item{
+		width: 100%;
+		height: auto;
+		margin-top: 30px;
+	}
+
+	.my_credit_block > .mc_top > .item:nth-last-child(1),
+	.my_credit_block > .mc_bottom > .item:nth-last-child(1){
+		margin-top: 30px;
+		width: 100%;
+		height: auto;
+	}
+
+	.my_credit_block > .mc_top > .item:nth-last-child(2),
+	.my_credit_block > .mc_bottom > .item:nth-last-child(2){
+		margin-top: 30px;
+		width: 100%;
+		height: auto;
+	}
+
+	.my_credit_block > .mc_left > .item,
+	.my_credit_block > .mc_right > .item{
+		width: 100%;
+		margin-bottom: 0px;
+		height: auto;
+		margin-top: 30px;
+	}
+
+	.my_credit_block > .mc_right > .item{
+		margin-bottom: 0px;
+	}
+
+	.free_cases > .free_case{
+		width: calc((100% - 30px) / 2);
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+		z-index: 2;
+		margin-bottom: 30px;
+		position: relative;
+		transition: all .3s ease-in-out;
+	}
+
+	/* battles */
+
+	.battle_navigation .gray_button,
+	.battle_room_navigation .gray_button{
+		height: 48px;
+		font-size: 18px;
+		font-family: Gilroy Bold;
+		margin-right: 0px;
+		opacity: 0.5;
+		width: 100%;
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.battle_navigation .green_button,
+	.battle_room_navigation .green_button{
+		height: 48px;
+		font-size: 18px;
+		width: 100%;
+	}
+
+	.battle_search .button{
+		width: 50%;
+		padding: 20px 20px 20px 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		font-family: Gilroy Bold;
+		font-size: 18px;
+		text-transform: uppercase;
+		text-align: center;
+		color: #cecece;
+		cursor: pointer;
+		border-right: 1px solid rgba(255,255,255,0.05);
+		border-bottom: 1px solid rgba(255,255,255,0.05);
+		align-self: stretch;
+	}
+
+	.battle_search .button:last-of-type{
+		border-right: none;
+	}
+
+	.battle_search .button:nth-child(even){
+		border-right: none;
+	}
+
+	.battle_search form{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 30px;
+	}
+
+
+	.battle_search input{
+		margin-right: 0px;
+		height: 40px;
+		width: 100%;
+	}
+
+	.battle_search button{
+		height: 40px;
+		width: 100%;
+		margin-top: 15px;
+	}
+
+}
+
+/* ------------------------------ */
+/* - Для экранов меньше  480px -- */
+/* ------------------------------ */
+
+@media (max-width: 480px){
+
+/* ----------- case ------------ */
+
+	.case{
+		width: 100%;
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	.case .name{
+		width: calc( 100% - 40px );
+		margin: 0 auto;
+		font-size: 20px;
+		color: #e7e7eb;
+		text-align: center;
+		font-family: Gilroy Bold;
+		text-transform: uppercase;
+		margin-top: 20px;
+	}
+
+/* ----- game mode contract ---- */
+
+	.inventory > .content > .item,
+	.case_content > .content > .item,
+	.shop_content > .content > .item,
+	.percent_case > .content > .item
+	{
+		width: calc( 100% - 30px );
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 15px;
+		position: relative;
+		cursor: pointer;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+		border: 1px solid rgba(0,0,0,0);
+		transition: all .2s ease;
+		align-self: stretch;
+	}
+
+/* --------- pagination -------- */
+
+	.pagination > .page{
+		width: 30px;
+		height: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		background: url(../images/bg/pgnt.png) center center;
+		font-family: Gilroy Bold;
+		border-bottom: 2px solid #121418;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+		margin: 15px 5px 30px 5px;
+		transition: all .2s ease;
+	}
+
+	.pagination > a > .page{
+		width: 30px;
+		height: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		font-family: Gilroy Bold;
+		border-bottom: 2px solid #121418;
+		background: url(../images/bg/pgnt.png) center center;
+		box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+		transition: all .2s ease;
+	}
+
+/* ------ game mode contract ---- */
+
+	.contract_panel > .slot{
+		width: 100%;
+		height: 360px;
+		background: rgba(0,0,0,0.12);
+		margin-bottom: 30px;
+	}
+
+/* ------------- shop ----------- */
+
+	.shop_settings > .sort,
+	.shop_settings > .tab{
+		width: 100%;
+		height: 56px;
+	}
+
+	.shop_settings > .sort{
+		margin-bottom: 30px;
+	}
+
+	.shop_settings > .search{
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.shop_settings > .search input{
+		width: 100%;
+	}
+
+	.shop_settings > .search button{
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.free_cases > .free_case{
+		width: 100%;
+		background: url(../images/bg/case_bg.png);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+		z-index: 2;
+		margin-bottom: 30px;
+		position: relative;
+		transition: all .3s ease-in-out;
+	}
+
+
+	.free_cases_nav > a > .yellow_button,
+	.free_cases_nav > .yellow_button
+	{
+		width: 100%;
+		font-size: 20px;
+		margin-left: 0px;
+		margin-right: 0px;
+		opacity: 0.5;
+		margin-bottom: 30px;
+	}
+
+}
+/* ------------------------------ */
+/* - Для экранов меньше  320px -- */
+/* ------------------------------ */
+@media (max-width: 320px){
+
+}

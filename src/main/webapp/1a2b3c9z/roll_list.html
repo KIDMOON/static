@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="favicon.ico" />
+<title>ROLL管理</title>
+<link rel="stylesheet" type="text/css" href="media/css/default.css">
+</head>
+<body>
+	<div id="top_nav"></div>
+	<div class="container-fluid all">
+		<div id="left_menu"></div>
+		<div class="maincontent row">
+			<ul class="breadcrumb">
+				<li class="active">ROLL管理</li>
+			</ul>
+			<div class="container-fluid">
+				<div class="tab-pane active">
+					<!-- 搜索 -->
+					<div class="col-md-12" id="div_search">
+						<div class="form-inline mb10">
+							<input id="text_rollTitile" class="form-control col-xs-3" type="text" placeholder="ROLL标题" />
+                            <div class="form-group" style="margin-left :10px">
+                                <button type="button" class="btn btn-primary" id="btn-search">搜索</button>
+                            </div>
+                        </div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-inline">
+								<div class="form-group" id="btn_select"
+									style="margin-top: 10px; margin-left: 15px; float: right;">
+									<button type="button" class="btn btn-danger" id="btn_multiDelete">批量删除</button>
+									<button class="btn btn-success" id="btn_add">新增</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 数据展示 -->
+					<div class="row">
+						<div class="col-md-12" style="margin-top: 10px;">
+							<table class="table table-hover table-bordered">
+								<thead>
+									<tr>
+										<!-- 多选框 -->
+										<th class="text-center" scope="col" style="width: 80px;">
+											<input id="selectAll" type="checkbox" value=""> <span style="padding-left: 5px;">全选</span>
+										</th>
+										<th scope="col">标题</th>
+										<th scope="col">子标题</th>
+										<th scope="col">活动时间</th>
+										<th scope="col">参加条件</th>
+										<th scope="col">活动饰品</th>
+										<th scope="col" style="width: 220px;">创建时间</th>
+										<th scope="col" style="width: 120px;">状态</th>
+										<th class="text-center" scope="col" style="width: 140px;">排序</th>
+										<th class="text-center" scope="col" style="width: 140px;">操作</th>
+									</tr> 
+								</thead>
+								<tbody>
+								</tbody>
+								<tfoot>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<input type="hidden" name="hid_pageIndex" id="hid_pageIndex" /> 
+		</div>
+	</div>
+
+	<script type="text/javascript" src="media/js/default.js"></script>
+	<script type="text/javascript" src="js/roll_list.js"></script>
+</body>
+</html>

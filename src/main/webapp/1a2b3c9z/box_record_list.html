@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="favicon.ico" />
+<title>开箱记录管理</title>
+<link rel="stylesheet" type="text/css" href="media/css/default.css">
+</head>
+<body>
+	<div id="top_nav"></div>
+	<div class="container-fluid all">
+		<div id="left_menu"></div>
+		<div class="maincontent row">
+			<ul class="breadcrumb">
+				<li class="active">开箱记录</li>
+			</ul>
+			<div class="container-fluid">
+				<!-- 搜索 -->
+				<div class="row" style="margin-bottom: 10px;">
+					<div class="col-md-12" id="div_search">
+						<div class="form-inline mb10">
+							<div class="form-group">
+                                <select id="select_regionId" class="form-control col-xs-3" style="min-width: 177px;"></select>
+                            </div>
+                            <div class="form-group sel-input-item-left">                     
+                               	<input id="text_nickName" class="form-control col-xs-3" type="text" placeholder="用户昵称" />
+                           	</div> 
+                           	<div class="form-group sel-input-item-left">                     
+                               	<input id="text_boxName" class="form-control col-xs-3" type="text" placeholder="箱子名称" />
+                           	</div> 
+                           	<div class="form-group sel-input-item-left">                     
+                               	<input id="text_goodsName" class="form-control col-xs-3" type="text" placeholder="装备名称" />
+                           	</div> 
+                           	<div class="form-group" style="margin-left :10px">                       
+                               	<button type="button" class="btn btn-primary" id="btn-search">搜索</button>
+                           	</div>  
+                       </div>  
+	                </div> 
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-inline">
+							<div class="form-group" id="btn_select"
+								style="margin-bottom: 10px; margin-left: 15px; float: right;">
+								<button class="btn btn-success" id="btn_add">新增</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<table class="table table-hover table-bordered">
+							<thead>
+								<tr>
+									<th style='width: 60px; text-align: center;'>No.</th>
+									<th>用户</th>
+									<th>属于</th>
+									<th>箱子名称</th>
+									<th>箱子价格</th>
+									<th>装备名称</th>
+									<th>装备价格</th>
+									<th style="width: 220px;">抽中时间</th>
+								</tr>
+							</thead>
+							<tbody>
+							
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<input type="hidden" id="hid_pageIndex" />
+		</div>
+	</div>
+	
+	<!-- 添加模态框 -->
+	<div id="add_modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content form-horizontal">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title">新增</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label class="col-xs-3 control-label"> <em class="emcolor">*</em> <span>用户</span></label>
+						<div class="col-sm-5">
+							<select id="save_UserId" class="form-control" style="width: 300px;"></select> 
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-3 control-label"> <em class="emcolor">*</em> <span>属于</span></label>
+						<div class="col-sm-5">
+							<select id="save_RegionId" class="form-control"></select> 
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-3 control-label"> <em class="emcolor">*</em> <span>箱子</span></label>
+						<div class="col-sm-5">
+							<select id="save_BoxId" class="form-control"><option value="">请选择</option></select> 
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-3 control-label"><em class="emcolor">*</em> <span>装备</span></label>
+						<div class="col-sm-5">
+							<select id="save_GoodsId" class="form-control"><option value="">请选择</option></select>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button id="modal_add_btn" class="btn btn-success" type="button">保存</button>
+					<button  class="btn btn-default" type="button"
+						data-dismiss="modal" id="close_save_btn">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a href="#top" id="goTop"><i class="fa fa-angle-up fa-3x"></i></a>
+
+	<script type="text/javascript" src="media/js/default.js"></script>
+    <script type="text/javascript" src="js/box_record_list.js"></script>
+</body>
+</html>

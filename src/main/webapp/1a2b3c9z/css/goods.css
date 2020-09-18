@@ -1,0 +1,284 @@
+label em{
+	color:red;
+	margin-right:2px;
+}
+
+.subTitle{
+    height: 17px;
+    line-height: 17px;
+    padding-left: 10px;
+    border-left: 2px solid red;
+    margin-bottom: 10px;
+}
+
+a.actions {
+    width: 90px;
+    height: 20px;
+    line-height: 15px;
+    overflow: hidden;
+    display: block;
+    background-color: #cfcfcf;
+    color: #fff !important;
+    text-align: center;
+    font-size: 12px !important;
+    font-family: Microsoft Yahei;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.margin-bottom-30{
+	margin-bottom:30px;
+}
+.tag-option-line{
+	display:inline;
+}
+.color-input-option{
+	width:30px;
+	height:30px;
+}
+.color-input{
+	width: 92%;
+}
+.save-tage-btn{
+	margin-left:30%;
+}
+.goodsDetail-lable{
+	    text-align: left !important;
+}
+.margin-top5{
+	margin-top:5px;
+}
+.uploadimages {
+    width: 100px;
+    float: left;
+    height: 120px;
+}
+.preview {
+    width: 88px;
+    height: 88px;
+    vertical-align: middle;
+    border: #cfcfcf 1px solid;
+    text-align: center;
+    display: table-cell;
+    position: absolute;
+}
+.divoperator {
+    background: rgba(33,33,33,.7);
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 86px;
+    height: 16px;
+}
+.uploadimages .preview .divoperator a.leftmove {
+    background-position: 0px -13px;
+}
+.uploadimages .preview .divoperator a {
+    text-indent: -999px;
+    display: inline-block;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin-right: 10px;
+    font-size: 0px;
+    line-height: 0;
+    overflow: hidden;
+    background: transparent url("../../../media/images/flash_up_ico.png") no-repeat scroll 0% 0%;
+}
+a {
+    text-decoration: none;
+}
+.uploadimages .preview .divoperator a.rightmove {
+    background-position: -13px -13px;
+}
+.uploadimages .preview .divoperator a.photodel {
+    background-position: -13px 0px;
+}
+.preview img {
+    vertical-align: middle;
+    margin: 1px;
+}
+img {
+    border: 0;
+}
+.actionBox {
+    width: 90px;
+    height: 30px;
+    clear: both;
+    margin-top: 5px;
+    position: relative;
+    top: 90px;
+    
+}
+.uploadimages .actionBox a.actions {
+    width: 90px;
+    height: 20px;
+    line-height: 15px;
+    overflow: hidden;
+    display: block;
+    background-color: #cfcfcf;
+    color: #fff !important;
+    text-align: center;
+    font-size: 12px !important;
+    font-family: Microsoft Yahei;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor:pointer;
+}
+.upFile{
+	width: 85px;
+	margin: 0px 10px;
+	float: left;
+	height: 120px;
+}
+.upFile .bgImg {
+    border: 2px;
+    width: 85px;
+    height: 85px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.upFile .adds {
+    width: 85px;
+    height: 85px;
+    color: #FFF;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.upFile .adds input {
+    position: absolute;
+    top: 0px;
+    width: 85px;
+    height: 85px;
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    opacity: 0;
+    cursor: pointer;
+}
+.spec-width{
+	width: 200px;
+}
+.pic-li {
+    width: 85px;
+    height: 85px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom:25px;
+    text-align: center;
+    list-style:none;
+}
+.formitemtitle4 {
+    display: block;
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 1px dashed #ccc;
+    margin: 5px 0;
+}
+ul {
+    list-style: none;
+    padding-left : 20px;
+}
+.spec-modol{
+	margin-left: -26px;
+}
+.skuItemList li {
+    margin-right: 8px;
+    float: left;
+}
+.skuItemList li input {
+    float: left;
+}
+.skuItemList li input {
+    margin-right: 5px;
+}
+
+<!-- 鍥剧墖閫変腑鏁堟灉  鍒嗗壊绾�  start    -->
+
+.clearfix {
+  *zoom: 1;
+}	
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+li .pic-li img {
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
+  box-shadow: 0 0 0 4px #fff;
+  cursor: pointer;
+  animation:        unselected 0.3s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  -o-animation:     unselected 0.3s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  -ms-animation:    unselected 0.3s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  -moz-animation:   unselected 0.3s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  -webkit-animation: unselected 0.3s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+
+li.pic-li {
+  position: relative;
+  margin: 10px;
+  width: 87px;
+  height: 87px;
+  float: left;
+}
+
+li.pic-li:before {
+  content: "\2714";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background:  #00c09e;
+  border-radius: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  z-index: 10;
+  opacity: 0;
+  transition:         0.3s linear;
+  -o-transition:      0.3s linear;
+  -ms-transition:     0.3s linear;
+  -moz-transition:    0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -o-user-select:      none;
+  -moz-user-select:    none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+li.pic-li.selected:before {
+  opacity: 1;
+}
+
+/* img selection */
+
+li.pic-li.selected img {
+  box-shadow: 0 0 0 4px #00c09e;
+  animation:        selected 0.3s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  -o-animation:     selected 0.3s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  -ms-animation:    selected 0.3s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  -moz-animation:   selected 0.3s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  -webkit-animation: selected 0.3s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+
+#div_search input, #div_search select {
+	width: 160px;
+}

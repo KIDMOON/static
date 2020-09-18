@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <title>24小时免费箱子设置</title>
+    <link rel="stylesheet" type="text/css" href="media/css/default.css">
+	<link rel="stylesheet" type="text/css" href="media/js/jquery/datepicker/skin/WdatePicker.css">
+    <link rel="stylesheet" type="text/css" href="css/box_edit.css"> 
+</head>
+<body>
+	<div id="top_nav"></div>
+    <div class="container-fluid all">
+        <div id="left_menu">
+        </div>
+        <div class="maincontent row">
+            <ul class="breadcrumb">
+                <li>限时箱子时间设置</li>
+            </ul>
+            <div class="container-fluid">
+         		<div class="row exitshopinfo">
+					<div class="col-md-12">
+				         <!--限时箱子活动截止-->
+				        <div class="form-horizontal">
+				        	<h4 class="subTitle">限时箱子活动截止</h4>
+				        </div>
+				        <form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-xs-2 control-label"><em>*</em><span>截止时间</span></label>
+								<div class="col-sm-2">
+									<input type="text" class="form-control" id="txt_endTime" onClick="WdatePicker({dateFmt:'yyyy-MM-dd HH'})">
+								</div>
+							</div>
+				     	</form>
+				     </div>
+				  </div>
+		     	<div class="text-center margin-bottom-30">
+			         <button id="btn-detail-edit" class="btn btn-success">保存</button>
+		         </div>
+	        </div>
+		</div>       
+    </div>
+    
+    <input type="hidden" name="hid_boxId" id="hid_boxId" />
+    
+    <script type="text/javascript" src="media/js/default.js"></script>
+	<script type="text/javascript" src="media/js/jquery/datepicker/WdatePicker.js"></script>
+	<script type="text/javascript" src="js/flash_box_config.js"></script>
+</body>
+</html>

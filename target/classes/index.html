@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta name="renderer" content="webkit" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description"  content="kxcsgo为网友提供最全的CSGO开箱技巧,KXCSGO开箱平台一个可以免费白嫖的CSGO开箱平台，KXCSGO平台是全网最专业的CSGO饰品交易平台,是唯一能立即取回的CSGO开箱平台，方便快捷的CSGO游戏道具交易，便捷、安全、诚信的服务，为您提供愉悦的steam饰品购买体验!" />
+	<meta name="keywords"  content="kxcsgo,kxcsgo开箱,csgo开箱,csgo免费开箱,csgo开箱网,csgo开箱网站,csgo饰品,csgo饰品交易,csgo交易,csgo交易平台" />
+	<title>KXCSGO-开箱CSGO饰品交易平台</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- css -->
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+<div class="page">
+	<div id="mall_header"></div>
+
+	<div id="index_empty"></div>
+
+	<script id="boxInfo" type="text/x-jquery-tmpl">
+		{{each(i, groupInfo) result}}
+			<div class="case_block_type_${i%2+1}">
+					<div class="big_title">${groupInfo.groupName}
+					{{if groupInfo.regionType == "7"}}
+						<span class="store0-span">
+							<div class="time-wrap" _ss8="" _ss7="">
+								<div class="time-item" _ss8="">
+									<div class="time-half time-up up1" _ss8="">
+										<div class="time-num time-num-day" _ss8="">
+											${groupInfo.days}
+										</div>
+									</div>
+									<div class="time-half time-down down1" _ss8="">
+										<div class="time-num time-num-day" _ss8="">
+											${groupInfo.days}
+										</div>
+									</div>
+									<div class="time-half time-up up2" _ss8="">
+										<div class="time-num time-num-day" _ss8="">
+											${groupInfo.days}
+										</div>
+									</div>
+									<div class="time-half time-down down2" _ss8="">
+										<div class="time-num time-num-day" _ss8="">
+											${groupInfo.days}
+										</div>
+									</div>
+								</div>
+								<div class="time-dot" _ss8="">
+									天
+								</div>
+								<div class="time-item" _ss8="">
+									<div class="time-half time-up up1" _ss8="">
+										<div class="time-num time-num-hour" _ss8="">
+											${groupInfo.hours}
+										</div>
+									</div>
+									<div class="time-half time-down down1" _ss8="">
+										<div class="time-num time-num-hour" _ss8="">
+											${groupInfo.hours}
+										</div>
+									</div>
+									<div class="time-half time-up up2" _ss8="">
+										<div class="time-num time-num-hour" _ss8="">
+											${groupInfo.hours}
+										</div>
+									</div>
+									<div class="time-half time-down down2" _ss8="">
+										<div class="time-num time-num-hour" _ss8="">
+											${groupInfo.hours}
+										</div>
+									</div>
+								</div>
+								<div class="time-dot" _ss8="">
+									时
+								</div>
+								<div class="time-item toggle" _ss8="">
+									<div class="time-half time-up up1" _ss8="">
+										<div class="time-num time-num-minute" _ss8="">
+											${groupInfo.minutes}
+										</div>
+									</div>
+									<div class="time-half time-down down1" _ss8="">
+										<div class="time-num time-num-minute" _ss8="">
+											${groupInfo.minutes}
+										</div>
+									</div>
+									<div class="time-half time-up up2" _ss8="">
+										<div class="time-num time-num-minute" _ss8="">
+											${groupInfo.minutes}
+										</div>
+									</div>
+									<div class="time-half time-down down2" _ss8="">
+										<div class="time-num time-num-minute" _ss8="">
+											${groupInfo.minutes}
+										</div>
+									</div>
+								</div>
+								<div class="time-dot" _ss8="">
+									分
+								</div>
+							</div>
+						</span>
+					{{else}}
+						<span>${groupInfo.openCount} 实时开箱数据</span>
+					{{/if}}
+					</div>
+					{{each(j, entity) groupInfo.boxList}}
+					<div class="case">
+						<a href="detail.html?id=${entity.boxId}">
+							<div class="top_line_case"></div>
+							<img class="icon_img" src="${serverAddress.file + entity.boxPicture}">
+							<img class="case_img" src="${serverAddress.file + entity.field03}">
+							<div class="name">${entity.boxName}</div>
+							{{if groupInfo.regionType == "7"}}
+								{{if entity.field05 == "0"}}
+									<div class="button stock0">
+										无库存
+									</div>
+								{{else}}
+									<div class="button">
+										剩余 ${entity.field05} 件
+									</div>
+								{{/if}}
+							{{else}}
+								<div class="button">
+									${entity.boxPrice} KB
+								</div>
+							{{/if}}
+						</a>
+					</div>
+					{{/each}}
+				</div>
+		{{/each}}
+	</script>
+	
+	<!-- information -->
+	<div class="information">
+		<div class="desc">
+			<div class="logo"></div>
+			<div class="text">
+				Do you need new, awesome skins? Choose a case that you like and start receiving items! We have a higher drop-rate for expensive skins and some exclusive cases, that you will not find in the game.
+			</div>
+			<div class="yellow_button" onclick="toSteamLogin()">Sign in through STEAM</div>
+			<div class="yellow_button" onclick="toQQLogin()">Sign in through qq</div>
+		</div>
+		<div class="stat_block">
+			<img src="images/icons/stat_icon_1.png">
+			<div class="title">实时开箱数量</div>
+			<div class="count" id="total-opened-counter">1 732 092</div>
+		</div>
+		<div class="stat_block">
+			<img src="images/icons/stat_icon_2.png">
+			<div class="title">所有用户量</div>
+			<div class="count" id="total-users-counter">532 132</div>
+		</div>
+		<div class="stat_block">
+			<img src="images/icons/stat_icon_3.png">
+			<div class="title">掉落物品</div>
+			<div class="count" id="drop-counter">0</div>
+		</div>
+	</div>
+	<!-- end information -->
+
+
+
+	<!-- end information -->
+	<div id="mall_footer"></div>
+</div>
+<div id="mall_popup"></div>
+</body>
+<script type="text/javascript" src="js/default.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>

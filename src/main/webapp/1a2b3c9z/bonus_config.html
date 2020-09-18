@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <title>奖金管理</title>
+    <link rel="stylesheet" type="text/css" href="media/css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/box_edit.css"> 
+</head>
+<body>
+	<div id="top_nav"></div>
+    <div class="container-fluid all">
+        <div id="left_menu">
+        </div>
+        <div class="maincontent row">
+            <ul class="breadcrumb">
+                <li>奖金管理</li>
+            </ul>
+            <div class="container-fluid">
+         		<div class="row exitshopinfo">
+					<div class="col-md-12">
+				         <!--装备基本信息设置-->
+				        <div class="form-horizontal">
+				        	<h4 class="subTitle">奖金描述</h4>
+				        </div>
+				        <form class="form-horizontal" role="form">
+							<div class="form-group">			
+					   			<label class="col-sm-2 control-label"><em>*</em><span>奖金周期</span></label>
+					   			<div class="col-sm-2">
+					   				<input type="text" class="form-control" id="txt_cycleHour">
+					   			</div>
+					   			<span>小时</span>
+							</div>
+							<div class="form-group">			
+					   			<label class="col-sm-2 control-label"><em>*</em><span>预计会员成本价格</span></label>
+					   			<div class="col-sm-2">
+					   				<input type="text" class="form-control" id="txt_field01">	   				
+					   			</div>
+					   			<span>$</span>
+							</div>
+							<div class="form-group">			
+					   			<label class="col-sm-2 control-label"><em>*</em><span>预计主播成本价格</span></label>
+					   			<div class="col-sm-2">
+					   				<input type="text" class="form-control" id="txt_field02">	   				
+					   			</div>
+					   			<span>$</span>
+							</div>
+				     	</form>
+				     </div>
+				  </div>
+				  <div class="row">
+				  	<div class="col-md-11" style="margin-left:15px;">
+				     	<!--装备库存/规格-->
+				     	<div class="form-horizontal">
+				         	<h4 class="subTitle" data-i18n="priceDetail">奖金内容</h4>
+				         	<div id="div-moreGoodsSpec" style="margin-left:20px;">
+					         	<input type="hidden" id="hid_addGoodsSpec">
+					         	<div class="form-group" id="bonusSpec-items" > 
+					         		<button type="button" class="btn btn-primary btn-sm" id="btn_bonus_add">添加</button>
+					         		<div id="div-spec-for-add">
+					         		</div>				         		
+									<table class="table table-hover table-bordered" id="table-spec" style="margin-top:10px;">
+										<thead>
+											<tr>
+												<th style='width: 60px; text-align: center;'>No.</th>
+												<th scope="col" class="text-center" style="width:120px;"><span>金额</span></th>
+												<th scope="col" class="text-center" style="width:150px;"><em style="color:red;">*</em><span>中奖权重</span><span id="bonusWeightSum">0%</span></th>
+												<th scope="col" class="text-center" style="width:150px;"><em style="color:red;">*</em><span>中奖权重</span><span id="bonusWeight01Sum">0%</span></th>
+												<th scope="col" class="text-center" style="width:100px;">操作</th>
+											</tr>
+										</thead>
+										<tbody>											
+										</tbody>
+										<tfoot>
+										</tfoot>
+								    </table>
+								    <input type="hidden" id="tr_num" value="0">
+								</div>
+							</div>
+				        </div>
+				     </div>
+				 </div>
+		     	<div class="text-center margin-bottom-30">
+		     		 <button id="autoWeight" class="btn btn-default">自动分配权重</button>&nbsp;&nbsp;
+			         <button id="btn-detail-edit" class="btn btn-success">保存</button>
+		         </div>
+	        </div>
+		</div>       
+    </div>
+    
+    <script type="text/javascript" src="media/js/default.js"></script>
+	<script type="text/javascript" src="js/bonus_config.js"></script>
+</body>
+</html>

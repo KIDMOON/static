@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="favicon.ico" />
+<title>用户管理</title>
+<link rel="stylesheet" type="text/css" href="media/css/default.css">
+</head>
+<body>
+	<div id="top_nav"></div>
+	<div class="container-fluid all">
+		<div id="left_menu"></div>
+		<div class="maincontent row">
+			<ul class="breadcrumb">
+				<li class="active">用户管理</li>
+			</ul>
+			<div class="container-fluid">
+				<!-- 搜索 -->
+				<div class="row" style="margin-bottom: 10px; margin-left: -22px;">
+					<div class="col-md-12" id="div_search">
+						<div class="form-inline mb10">
+	                           <div class="form-group sel-input-item-left">                     
+	                               <input id="text_nickName" class="form-control col-xs-3" type="text" placeholder="昵称" />
+	                           </div> 
+	                           <div class="form-group sel-input-item-left">                     
+	                               <input id="text_partnerCode" class="form-control col-xs-3" type="text" placeholder="推广码" />
+	                           </div>
+	                           <div class="form-group" style="margin-left :10px">                       
+	                               <button type="button" class="btn btn-primary" id="btn-search">搜索</button>
+	                           </div>  
+	                       </div>  
+	                </div> 
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<table class="table table-hover table-bordered">
+							<thead>
+								<tr>
+									<th style='width: 60px; text-align: center;'>No.</th>
+									<th>用户编号</th>
+									<th>头像</th>
+									<th>昵称</th>
+									<th>登录账号</th>
+									<th style='display: none;'>登录账号</th>
+									<th>是否是主播</th>
+									<th>统计</th>
+									<th>推广码</th>
+									<th>$总金额</th>
+									<th>$剩余金额</th>
+									<th scope="col" style="width: 100px;">创建日期</th>
+									<th class="text-center" scope="col" style="width: 140px;">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+							
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<input type="hidden" id="hid_pageIndex" />
+		</div>
+	</div>
+	
+	<!-- 编辑模态框 -->
+	<div id="update_modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content form-horizontal">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title">编辑</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group" style="display: none;">
+						<label class="col-xs-3 control-label"> <span>Id</span></label>
+						<div class="col-sm-5">
+							<input id="update_UserId" class="form-control" type="text">
+							<input id="update_Version" class="form-control" type="hidden">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-3 control-label"> <span>$剩余金额</span></label>
+						<div class="col-sm-5">
+							<input id="update_MoneyFirstLeft" class="form-control" type="text">
+						</div>
+					</div>
+					<div class="form-group" style="display: none;">
+						<label class="col-xs-3 control-label"> <span>碎片剩余金额</span></label>
+						<div class="col-sm-5">
+							<input id="update_MoneySecondLeft" class="form-control" type="text">
+						</div>
+					</div>
+					<div class="form-group" style="display: none;">
+						<label class="col-xs-3 control-label"> <span>剩余积分</span></label>
+						<div class="col-sm-5">
+							<input id="update_MoneyThirdLeft" class="form-control" type="text">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button id="modal_edit_btn" class="btn btn-success" type="button">保存</button>
+					<button class="btn btn-default" type="button" id="close_update_btn" 
+						data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 主播模态框 -->
+	<div id="updatecode_modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content form-horizontal">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title">编辑</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group" style="display: none;">
+						<label class="col-xs-3 control-label"> <span>Id</span></label>
+						<div class="col-sm-5">
+							<input id="update_code_UserId" class="form-control" type="text">
+						</div>
+					</div>
+					<div class="form-group">
+			   			<label class="col-xs-3 control-label">选择主播推广码</label>
+			   			<div class="col-sm-5">
+			   				<select class="form-control" name="user_field04" id="user_field04">
+			   				</select>					   		
+			   			</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button id="modal_editcode_btn" class="btn btn-success" type="button">保存</button>
+					<button class="btn btn-default" type="button" id="close_updatecode_btn" 
+						data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 编辑推广码 -->
+	<div id="update_partnerCode_modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content form-horizontal">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title">编辑</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group" style="display: none;">
+						<label class="col-xs-3 control-label"> <span>Id</span></label>
+						<div class="col-sm-5">
+							<input id="update_partnerCode_UserId" class="form-control" type="text">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-xs-3 control-label"> <span>推广码</span></label>
+						<div class="col-sm-5">
+							<input id="update_partnerCode" class="form-control" type="text">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button id="modal_edit_partnerCode_btn" class="btn btn-success" type="button">保存</button>
+					<button class="btn btn-default" type="button" id="close_update_partnerCode_btn" 
+						data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 主播设置推广赠送百分比 -->
+	<div id="update_partnerPercent_modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content form-horizontal">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title">编辑</h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group" style="display: none;">
+						<label class="col-xs-3 control-label"> <span>Id</span></label>
+						<div class="col-sm-5">
+							<input id="update_partnerPercent_UserId" class="form-control" type="text">
+						</div>
+					</div>
+					<div class="form-group">
+			   			<label class="col-xs-4 control-label">主播推广额外赠送%</label>
+			   			<div class="col-sm-5">
+			   				<input type="text" class="form-control" name="partner_give_percent" id="partner_give_percent" />				   		
+			   			</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button id="modal_editpercent_btn" class="btn btn-success" type="button">保存</button>
+					<button class="btn btn-default" type="button" id="close_updatepercent_btn" 
+						data-dismiss="modal">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a href="#top" id="goTop"><i class="fa fa-angle-up fa-3x"></i></a>
+
+	<script type="text/javascript" src="media/js/default.js"></script>
+    <script type="text/javascript" src="js/user_list.js"></script>
+</body>
+</html>

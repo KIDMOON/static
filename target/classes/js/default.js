@@ -1,0 +1,10 @@
+﻿document.write("<script type='text/javascript' src='js/gd/config.js'></script>");
+document.write("<script type='text/javascript' src='js/jquery/jquery-3.3.1.min.js'></script>");
+document.write("<script type='text/javascript' src='js/jquery/customscrollbar/CustomScrollbar.min.js'></script>");
+document.write("<script type='text/javascript' src='js/jquery/tmpl/jquery.tmpl.min.js'></script>");
+document.write("<script type='text/javascript' src='js/jquery/cookie/jquery.cookie.js'></script>");
+document.write("<script type='text/javascript' src='js/bootstrap/bootstrap.min.js'></script>");
+document.write("<script type='text/javascript' src='js/gd/encrypt.js'></script>");
+document.write("<script type='text/javascript' src='js/gd/jquery.gd.js'></script>");
+document.write("<script type='text/javascript' src='js/gd/menu.js'></script>");
+document.write("<script type='text/javascript' src='js/gd/jquery.prompt.js'></script>");

@@ -1,0 +1,10 @@
+﻿document.write("<script type='text/javascript' src='../1a2b3c9z/media/js/gd/config.js'></script>");
+document.write("<script type='text/javascript' src='../1a2b3c9z/media/js/jquery/jquery-1.11.0.min.js'></script>");
+document.write("<script type='text/javascript' src='../1a2b3c9z/media/js/jquery/cookie/jquery.cookie.js'></script>");
+document.write("<script type='text/javascript' src='../1a2b3c9z/media/js/jquery/accordionmenu/jquery-accordion-menu.js'></script>");
+document.write("<script type='text/javascript' src='../1a2b3c9z/media/js/gd/jquery.gd.js'></script>");
+document.write("<script type='text/javascript' src='../1a2b3c9z/media/js/gd/jquery.prompt.js'></script>");
+document.write("<script type='text/javascript' src='../1a2b3c9z/media/js/gd/base.js'></script>");
+document.write("<script type='text/javascript' src='../1a2b3c9z/media/js/bootstrap/bootstrap.min.js'></script>");
+document.write("<script type='text/javascript' src='../1a2b3c9z/media/js/gd/encrypt.js'></script>");
+document.write("<script type='text/javascript' src='../1a2b3c9z/media/js/jquery/jquery-ui.min.js'></script>");

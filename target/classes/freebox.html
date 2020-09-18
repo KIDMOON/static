@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="renderer" content="webkit" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description"  content="kxcsgo为网友提供最全的CSGO开箱技巧,KXCSGO开箱平台一个可以免费白嫖的CSGO开箱平台，KXCSGO平台是全网最专业的CSGO饰品交易平台,是唯一能立即取回的CSGO开箱平台，方便快捷的CSGO游戏道具交易，便捷、安全、诚信的服务，为您提供愉悦的steam饰品购买体验!" />
+	<meta name="keywords"  content="kxcsgo,kxcsgo开箱,csgo开箱,csgo免费开箱,csgo开箱网,csgo开箱网站,csgo饰品,csgo饰品交易,csgo交易,csgo交易平台" />
+	<title>KXCSGO-开箱CSGO饰品交易平台</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- css -->
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+<div class="page">
+	<div id="mall_header"></div>
+	
+	<div class="page_content">
+		<div class="title">
+			<i id="free-title">免费箱子</i>
+			<span id="free-desc"></span>
+		</div>
+		<div class="free_cases_nav">
+			<a href="freebox.html?type=0"><div class="yellow_button">免费箱子</div></a>
+			<a href="freebox.html?type=1"><div class="yellow_button">王者箱子</div></a>
+			<a href="freebox.html?type=2"><div class="yellow_button">首冲箱子</div></a>
+		</div>
+
+		<div class="page_content">
+			<div class="title" style="display: none;">
+				<i id="boxNameEle">CASE NAME</i>
+				<span>OPENED CASE</span>
+			</div>
+
+			<div class="rolling_block">
+				<div class="rolling" id="tapeBox">
+					<div class="border_left"></div>
+					<div class="border_right"></div>
+					<div class="marker"></div>
+					<!-- ROLLING #1 -->
+				</div>
+			</div>
+
+			<div class="opening_settings content_bg">
+				<div class="content">
+					<div class="count_opening" id="open-box-div-left" style="visibility:hidden;">
+						<div class="title">一次性开启:</div>
+						<a class="active" href="javascript:void(0)"><div class="page">1</div></a>
+						<a href="javascript:void(0)"><div class="page hover">2</div></a>
+						<a href="javascript:void(0)"><div class="page hover">3</div></a>
+						<a href="javascript:void(0)"><div class="page hover">4</div></a>
+						<a href="javascript:void(0)"><div class="page hover">5</div></a>
+					</div>
+					<a href="javascript:void(0);"><div class="yellow_button" id="open">不可开启</div></a>
+					<div class="total_price" id="total_price">需要: <font color="#ffa200" id="boxPriceSpan">$ 0</font></div>
+				</div>
+				<audio id="audio_001" src="images/sound/001.mp3" hidden="true"></audio>
+				<audio id="audio_002" src="images/sound/002.mp3" hidden="true"></audio>
+				<audio id="audio_003_f" src="images/sound/003_f.mp3" hidden="true"></audio>
+				<audio id="audio_003_w" src="images/sound/003_w.mp3" hidden="true"></audio>
+			</div>
+
+			<div class="case_content content_bg">
+				<div class="title">
+					可能获得
+					<span id="detailGoodsSum">共 0 个物品</span>
+					<div id="showPrize">查看中奖概率</div>
+				</div>
+				<div class="content" id="detailGoodsDiv">
+					<script id="detailGoods" type="text/x-jquery-tmpl">
+					<div class="item">
+						<img class="type_img" src="images/items/types/inner_${goodsLevel}.png" alt="">
+						<img class="item_img" src="${serverAddress.file + goodsPicture}">
+						<div class="name">${goodsName} </div>
+						<div class="name2">${goodsWearName} </div>
+					</div>
+				</script>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="mall_footer"></div>
+</div>
+<!-- win item -->
+<div class="wnd winning_wnd" id="multi-win">
+	<div class="title_wnd">YOU WIN!</div>
+	<div class="win_items">
+	</div>
+	<div class="win_item_nav">
+		<div class="green_button" id="multi-all-tack">收下</div>
+		<div class="yellow_button" id="multi-all-sell" data-price="0">出售 $ 0.00</div>
+	</div>
+	<div class="win_item_credit">额外获得: 0 积分</div>
+</div>
+<!-- prize -->
+<div class="wnd inside_wnd">
+	<div class="closed_wnd"></div>
+	<div class="title_wnd">what’s inside</div>
+	<div class="content_wnd" id="prizeDiv">
+		<div class="pitems">
+			<div class="pitem">ITEM</div>
+			<div class="pchance">CHANCE</div>
+		</div>
+		<script id="detailPrize" type="text/x-jquery-tmpl">
+			<div class="pitems">
+				<div class="pitem">${goodsName + "|" + goodsWearName}</div>
+				<div class="pchance">${goodsWeight01}%</div>
+			</div>
+		</script>
+	</div>
+</div>
+<div id="mall_popup"></div>
+</body>
+<!-- javascript -->
+<script type="text/javascript" src="js/default.js"></script>
+<script type="text/javascript" src="js/freebox.js"></script>
+</html>

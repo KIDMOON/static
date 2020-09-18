@@ -1,0 +1,85 @@
+<!-- head -->
+<div class="head">
+	<!-- full navigation block -->
+	<div class="navigation_bg">
+		<!-- navigation -->
+		<div class="navigation">
+
+			<!-- logo -->
+			<a href="index.html"><div class="logo hover"></div></a>
+
+			<!-- open navigation button -->
+			<div class="open_navigation hover"></div>
+
+			<!-- navigation content -->
+			<div class="nav_content">
+
+				<!-- game variables -->
+				<div class="type_game">
+					<ul class="games">
+					</ul>
+				</div>
+
+				<!-- menu links -->
+				<div class="menu">
+					<img src="images/icons/topmenu_1.png"><a href="index.html">CSGO箱子</a>
+                    <img src="images/icons/topmenu_8.png"><a href="luck.html">积分兑换</a>
+					<img src="images/icons/topmenu_7.png"><a href="bonus.html">每日奖金池</a>
+					<img src="images/icons/topmenu_2.png"><a href="roll.html">Roll福利</a>
+					<img src="images/icons/topmenu_3.png"><a href="freebox.html">免费宝箱</a>
+					<img src="images/icons/topmenu_4.png"><a href="agency.html">邀请有礼</a>
+					<img src="images/icons/topmenu_5.png"><a href="user.html">我的库存</a>
+					<img src="images/icons/topmenu_6.png"><a href="javascript:recharge();">K币充值<span id="onLineCount"></span></a>
+				</div>
+
+				<!-- login buttons -->
+				<div class="login" id="logoutli">
+					<a href="javascript:void(0)" onclick="goLogin()">
+						<div class="steam hover">
+							<img src="images/buttons/login_btn_steam.png">
+							<div class="icon"></div>
+							<div class="text">立即登录<span>Sign STEAM/QQ/Email</span></div>
+						</div>
+					</a>
+					<a href="javascript:void(0)" onclick="goRegister()">
+						<div class="qq hover">
+							<img src="images/buttons/login_btn_qq.png">
+							<div class="icon"></div>
+							<div class="text">邮箱注册<span>Email Register</span></div>
+						</div>
+					</a>
+				</div>
+
+				<!-- if logined user -->
+				<div class="user" id="loginli" onclick="gotousercenter();">
+					<img id="userpicture" src="images/avatar.jpg" alt="">
+					<div class="info">
+						<div class="name"><i id="uesrname">User Name</i> <a href="javascript:void(0)" onclick="logout()"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+						<div class="balance">K币: <font color="#b7900c" id="_money1" data-money="0">0.00</font> <i class="fa fa-plus-square" aria-hidden="true" onclick="recharge();"></i></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- live drops -->
+	<div class="live_drops">
+
+		<!-- title -->
+<!--		<div class="title">-->
+<!--			<div class="icon_box"></div>-->
+<!--			<div class="icon_arrow"></div>-->
+<!--		</div>-->
+
+		<!-- last 20 items -->
+		<div class="items">
+			<div class="row" id="livefeed">
+			</div>
+		</div>
+	</div>
+	<audio id="audio_pay" src="images/sound/pay.mp3" hidden="true"></audio>
+</div>
+<script type="text/javascript" src="js/jquery/qucode/jquery-qrcode-0.14.0.min.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/check.js"></script>
+<!-- end head -->

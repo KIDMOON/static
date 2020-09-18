@@ -1,0 +1,150 @@
+<!-- register -->
+<div class="wnd register_wnd wnd-default" id="registerWnd">
+	<div class="closed_wnd" onclick="closed_wnd()"></div>
+	<div class="title_wnd">邮箱注册</div>
+	<div class="content_wnd mCustomScrollbar">
+		<div class="register_form">
+			<form action="" method="">
+				<input type="text" id="newMail" placeholder="请输入您的邮箱">
+				<input type="password" id="newPassword" placeholder="请输入您的密码">
+				<input type="password" id="confirmPassword" placeholder="请确认您的密码">
+				<input type="text" id="registerPromoCode" placeholder="请输入推广码（选填）">
+				<div class="yellow_button" onclick="clickRigister()">注册</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- register done -->
+<div class="wnd register_done_wnd wnd-default" id="registerDoneWnd">
+	<div class="closed_wnd" onclick="closed_wnd()"></div>
+	<div class="title_wnd">账户激活</div>
+	<div class="content_wnd mCustomScrollbar">
+		<div class="register_done_form">
+			<form action="" method="">
+				<input type="text" id="newPasscode" placeholder="请输入邮箱验证码">
+				<div class="yellow_button" onclick="clickRigisterDone()">立即激活</div>
+				<a onclick="clickRigister()">未收到邮件，重新发送</a>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- login -->
+<div class="wnd login_wnd wnd-default" id="loginWnd">
+	<div class="closed_wnd" onclick="closed_wnd()"></div>
+	<div class="title_wnd">登录</div>
+	<div class="content_wnd mCustomScrollbar">
+		<div class="login_form">
+			<form action="" method="">
+				<input type="text" id="loginMail" placeholder="请输入您的邮箱">
+				<input type="password" id="loginPassword" placeholder="请输入您的密码">
+				<div class="yellow_button" onclick="clickLogin()">登录</div>
+				<div class="go-login-div-a">
+					<a class="go-register" onclick="goRegister()">还没有账号，前往注册&gt;</a>
+					<a class="go-forget-pwd" onclick="goForgetPwd()">忘记密码?</a>
+				</div>
+				<div class="go-otherlogin-div">
+					<span class="line"></span><span class="word_s">其他方式登录</span><span class="line"></span>
+				</div>
+				<div class="go-twologin-div">
+					<div onclick="toQQLogin()">
+						<img src="images/buttons/QQ.png"><span>QQ登录</span>
+					</div>
+					<div onclick="toSteamLogin()">
+						<img src="images/buttons/steam.png"><span>Steam登录</span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- forget pwd -->
+<div class="wnd forget_pwd_wnd wnd-default" id="forgetPwdWnd">
+	<div class="closed_wnd" onclick="closed_wnd()"></div>
+	<div class="title_wnd">账户激活</div>
+	<div class="content_wnd mCustomScrollbar">
+		<div class="forget_pwd_form">
+			<form action="" method="">
+				<input type="text" id="forget-vcode" placeholder="请输入邮箱收到的验证码">
+				<input type="password" id="forget-newPassword" placeholder="请输入您的密码">
+				<input type="password" id="forget-confirmPassword" placeholder="请确认您的密码">
+				<div class="yellow_button" onclick="clickEditPwd()">确认修改</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- recharge -->
+<div class="wnd recharge_wnd wnd-default" id="rechargeWnd">
+	<div class="closed_wnd" onclick="closed_wnd()"></div>
+	<div class="title_wnd">充值</div>
+	<div class="content_wnd mCustomScrollbar">
+		<div class="recharge_form" id="chooseMoenyDiv">
+			<form action="" method="">
+				<div class="new_select">
+					<select name="select" id="payTypeSelect" onchange="paychoose()">
+						<option value="1">支付宝</option>
+						<option value="2">微信</option>
+						<option value="3">充值卡</option>
+					</select>
+				</div>
+				<input type="text" id="recharge-promo-code" onkeyup="clickCodeOk()" placeholder="推广码（选填）">
+				<div class="fast_input hover" onclick="moneychoose(200)" data-money="200" data-link="http://juwcn.com/product/96058238095B5636">$ 200</div>
+				<div class="fast_input hover" onclick="moneychoose(150)" data-money="150" data-link="https://juw.cn/product/8685C76E55E4D6B6">$ 150</div>
+				<div class="fast_input hover" onclick="moneychoose(100)" data-money="100" data-link="http://juwcn.com/product/563C745F6A65B954">$ 100</div>
+				<div class="fast_input hover" onclick="moneychoose(50)" data-money="50" data-link="http://juwcn.com/product/C3E21FE9CC02A705">$ 50</div>
+				<div class="fast_input hover" onclick="moneychoose(30)" data-money="30" data-link="https://juw.cn/product/6CF67341C99761A7">$ 30</div>
+				<div class="fast_input hover" onclick="moneychoose(20)" data-money="20" data-link="http://juwcn.com/product/7A35B59DB74D1E78">$ 20</div>
+				<div class="fast_input hover" onclick="moneychoose(10)" data-money="10" data-link="http://juwcn.com/product/D23769E99426624F">$ 10</div>
+				<div class="fast_input hover" onclick="moneychoose(5)" data-money="5" data-link="https://juw.cn/product/7FD98B821E398AB4">$ 5</div>
+				<input type="text" id="recharge-card-content" onkeyup="clickCodeOk()" placeholder="请输入充值卡号">
+				<div id="open-card-url" class="yellow_button" onclick="goBuyCard()">购买充值卡</div>
+				<input type="text" id="recharge-money" onkeyup="clickCodeOk()" placeholder="充值金额">
+				<div class="yellow_button" id="button-recharge" data-status="0" onclick="clickRecharge()">立即支付 $ 0.00</div>
+				<div id="codeOkMsg"></div>
+			</form>
+		</div>
+		<div id="alipayCodeDiv">
+			<div id="alipayCode"></div>
+			<div id="alipayMoeny"></div>
+			<div>付款后页面将自动刷新</div>
+		</div>
+	</div>
+</div>
+
+<!-- notice -->
+<div class="wnd notice_wnd" id="noticeWnd">
+	<div class="closed_wnd" onclick="closedWindow();"></div>
+	<div class="title_wnd">NOTICE</div>
+	<div class="content_wnd" id="noticewndbody">
+	</div>
+</div>
+<!-- notice-picture -->
+<div class="notice_pic_wnd" id="noticePictureWnd">
+	<div class="closed_wnd" onclick="closedWindow();"></div>
+	<img id="noticePictureImg" class="notice_pic_img" />
+	<div class="text" id="noticePictureContent"></div>
+</div>
+
+<!-- help -->
+<ul class="Anchor">
+	<li class="li0" onclick="javascript:window.open('article.html')">
+		<div class="box"></div>
+		<div>CSGO新闻</div>
+	</li>
+	<li class="li1" onclick="javascript:location.href='help001.html'">
+		<div class="box"></div>
+		<div>帮助中心</div>
+	</li>
+	<li class="li2">
+		<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=996600893&amp;site=qq&amp;menu=yes" target="_blank">
+			<div class="box"></div>
+			<div>QQ客服</div>
+		</a>
+	</li>
+	<li class="li3" onclick="setTop()">
+		<div class="box"></div>
+		<div>TOP</div>
+	</li>
+</ul>
